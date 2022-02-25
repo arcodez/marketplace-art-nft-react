@@ -1,0 +1,897 @@
+/* Aqui empieza index file */
+h1,
+h1 {
+font-size: 2.5rem;
+.col-sm-3,
+}
+.col-sm-3 {
+.card-text:last-child {
+.section-down > .card {
+padding-bottom: 20px;
+.section-down > .card > .card-body {
+.section-down > .card > .card-body > h5 {
+.section-down > .card > .card-body > h5 > i {
+color: rgb(87, 18, 214);
+font-size: 50px;
+.section-down > .card > .card-body > p {
+color: rgb(158, 155, 155);
+.hero-image {
+background-image: url("https://edeline.ru/nft-demo/assets/img/header.gif");
+height: 100vh;
+background-position: left;
+padding-top: 20vh;
+padding-left: 10%;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+line-height: 1.4;
+.hero-image > h1 > label {
+color: violet;
+.hero-image > h1 > label > a {
+border: 2px solid#fff;
+.hero-image > h1 > label > a:hover {
+background-color: rgb(87, 4, 196);
+border: 2px solid rgb(87, 4, 196);
+@media (max-width: 1367px) {
+@media (max-width: 1024px) {
+font-size: 70px;
+padding-top: 30vh;
+@media (max-width: 812px) {
+padding-top: 26vh;
+font-size: 30px;
+padding-top: 28vh;
+@media (max-width: 568px) {
+padding-top: 21vh;
+@media (max-width: 415px) {
+font-size: 35px;
+padding-top: 35vh;
+@media (max-width: 321px) {
+.hero-image > h1 > b {
+.hero-image > h1 {
+font-size: 25px;
+padding-top: 40vh;
+padding-right: 10%;
+.fa-cloud-upload-alt:before {
+content: "\f382";
+.fa-edit:before {
+content: "\f044";
+.fa-long-arrow-alt-right:before {
+content: "\f30b";
+.fa-rocket:before {
+content: "\f135";
+.fa-th-large:before {
+content: "\f009";
+.far {
+.far,
+/* Aqui termina index file */
+/* Aqui empieza wallet file */
+.col-lg-4,
+.col-lg-4 {
+.d-block {
+font-size: calc(50px * 0.35);
+.single-wallet {
+background-color: rgb(21, 22, 31);
+.single-wallet:hover {
+background-color: rgb(33, 34, 48);
+.single-wallet > a > h4 {
+padding-top: 20px;
+.avatar-lg {
+width: 100px;
+height: 100px;
+.single-wallet > a > p {
+/* Aqui termina wallet file */
+/* Aqui empieza login file */
+.col-md-8,
+.col-md-8 {
+flex: 0 0 66.66667%;
+max-width: 66.66667%;
+.col-lg-7 {
+flex: 0 0 58.33333%;
+max-width: 58.33333%;
+.btn-primary {
+.btn-primary:hover {
+.btn-primary:focus {
+background-color: #0171dd;
+border-color: #016ad0;
+box-shadow: 0 0 0 0.2rem rgba(43, 150, 254, 0.5);
+.btn-primary:disabled {
+border-color: #0684fe;
+.btn-success {
+.btn-success:hover {
+.btn-success:focus {
+background-color: #2c8f6a;
+border-color: #298563;
+box-shadow: 0 0 0 0.2rem rgba(83, 184, 147, 0.5);
+.btn-success:disabled {
+background-color: #35ac80;
+border-color: #35ac80;
+.btn-block {
+.justify-content-center {
+justify-content: center !important;
+.login-dark {
+.login-dark form {
+max-width: 320px;
+background-color: #1e2833;
+padding: 40px;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+.tgh {
+margin-top: 180px;
+margin-bottom: 250px;
+.login-dark .illustration {
+padding: 15px 0 20px;
+font-size: 100px;
+color: #2980ef;
+.login-dark form .form-control {
+border-bottom: 1px solid #434a52;
+.login-dark form .btn-primary {
+border: none;
+border-radius: 4px;
+padding: 11px;
+box-shadow: none;
+margin-top: 26px;
+text-shadow: none;
+.login-dark form .btn-primary:hover,
+background: #214a80;
+.login-dark form .forgot {
+color: #6f7a85;
+opacity: 0.9;
+.login-dark form .forgot:hover,
+.login-dark form .forgot:active {
+.login-dark form .btn-primary:active {
+transform: translateY(1px);
+.vl-wallet {
+.vl-wallet > span {
+color: #5000e6;
+.vl-wallet > h3 {
+.vl-wallet > p {
+padding-bottom: 50px;
+.fab,
+.fa-facebook:before {
+content: "\f09a";
+.fa-google-plus-g:before {
+content: "\f0d5";
+.fa-twitter:before {
+content: "\f099";
+.sr-only {
+clip: rect(0, 0, 0, 0);
+height: 1px;
+margin: -1px;
+width: 1px;
+.fab {
+font-family: "Font Awesome 5 Brands";
+src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.eot);
+src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.eot?#iefix)
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.woff2)
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.woff)
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.ttf)
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-brands-400.svg#fontawesome)
+/* Aqui termina login file */
+/* Aqui empieza item file */
+nav,
+section {
+b,
+strong {
+h3,
+h4,
+h5,
+h4 {
+font-size: 1.5rem;
+h6 {
+.list-unstyled {
+.col-lg-5,
+.col-lg-6 {
+transition: opacity 0.15s linear;
+.fade {
+.fade:not(.show) {
+border-bottom: 1px solid #e9ecf1;
+.tab-content > .tab-pane {
+.tab-content > .active {
+border-radius: 50% !important;
+.d-flex {
+.justify-content-between {
+justify-content: space-between !important;
+.align-items-center {
+align-items: center !important;
+.m-0 {
+margin: 0 !important;
+.mt-0 {
+.mb-2 {
+margin-bottom: 0.5rem !important;
+.ml-2 {
+margin-left: 0.5rem !important;
+.mr-3 {
+margin-right: 1rem !important;
+.ml-3 {
+margin-left: 1rem !important;
+.mt-4,
+padding-right: 0.5rem !important;
+.px-lg-2 {
+padding-left: 0.5rem !important;
+.text-center {
+text-align: center !important;
+.avatar-sm {
+width: 18px;
+height: 18px;
+font-size: calc(18px * 0.35);
+.tab-pane.active {
+-webkit-animation: slide-down 0.5s ease-out;
+animation: slide-down 0.5s ease-out;
+.item-details-area > .container {
+background-color: #131920;
+margin-top: 90px;
+padding-right: 50px;
+margin-bottom: 150px;
+.qwertyy {
+.qwertyt {
+color: rgb(148, 145, 145);
+.vbh-c {
+background: #0f1318;
+.item-thumb > img {
+width: 90%;
+.tab-content,
+.nav-tabs {
+margin-left: 20px;
+padding-bottom: 10px;
+.rounded-circle {
+width: 40px;
+height: 40px;
+.vfgg {
+color: rgb(153, 152, 152);
+.nav-tabs > li > a {
+.nav-tabs > li > a:hover {
+.nav-tabs > li > .active {
+color: rgb(78, 47, 216);
+.nav-tabs > li {
+/*! CSS Used keyframes */
+@-webkit-keyframes slide-down {
+@keyframes slide-down {
+0% {
+opacity: 0;
+transform: translateY(15%);
+100% {
+transform: translateY(0);
+/* Aqui termina item file */
+/* Aqui empieza explore file */
+.fa-shopping-bag:before {
+content: "\f290";
+/* Aqui termina explore file */
+/* Aqui empieza create file */
+label {
+align-items: stretch;
+.input-group {
+border: 1px solid #e9ecf1;
+.vlc {
+input[type="file"] {
+.custom-file-upload {
+border: 0px;
+padding: 15px;
+/* Aqui termina create file */
+/* Aqui empieza contact file */
+[type="button"],
+[type="submit"] {
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+textarea {
+overflow: auto;
+resize: vertical;
+font-size: 1.75rem;
+.col-12,
+.col-12 {
+flex: 0 0 100%;
+height: calc(1.33em + 2rem + 2px);
+padding: 1rem 1.062rem;
+font-size: 0.75rem;
+line-height: 1.33;
+background-clip: padding-box;
+border: 1px solid #d9dfe7;
+transition: border-color 0.15s ease-in-out,
+.form-control::-ms-expand {
+.form-control:-moz-focusring {
+color: transparent;
+text-shadow: 0 0 0 #4e5d78;
+.form-control:focus {
+color: #495057;
+border-color: #80bdff;
+.form-control::-webkit-input-placeholder {
+.form-control::-moz-placeholder {
+.form-control:-ms-input-placeholder {
+.form-control::-ms-input-placeholder {
+.form-control::placeholder {
+color: #6c757d;
+.form-control:disabled {
+background-color: #f1f1f1;
+opacity: 1;
+textarea.form-control {
+height: auto;
+.form-group {
+.mb-0 {
+.mt-3 {
+margin-top: 1rem !important;
+.mb-4,
+.mt-5 {
+margin-top: 3rem !important;
+.mt-sm-4 {
+.mb-lg-5 {
+margin-bottom: 3rem !important;
+h3 {
+.vfg {
+margin-top: 50px;
+.intro-content > span {
+color: blue;
+font-size: 17px;
+.intro-content > h3 {
+color: rgb(255, 255, 255);
+font-weight: 800;
+.item-form {
+margin: auto;
+background-color: rgb(23, 20, 29);
+padding: 20px;
+margin-top: -20px;
+.form-control {
+.form-control:active,
+.form-control::after,
+.form-control:hover,
+.form-control:focus,
+.form-control::before {
+background: rgb(8, 7, 10);
+/* Aqui termina contact file */
+/* Aqui empieza collections file */
+/* Aqui termina collections file */
+/* Aqui empieza authors file */
+.avatar-a {
+width: 70px;
+height: 70px;
+.a-det {
+.a-det > a > h2 {
+.a-det > a > h2:hover {
+color: rgb(74, 42, 192);
+font-size: 23px;
+margin-bottom: 30px;
+.avatar-a > img {
+/* Aqui termina authors file */
+/* Aqui empieza author file */
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont,
+"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+input,
+input {
+.col-md-3,
+.col-md-9,
+.col-md-3 {
+flex: 0 0 25%;
+max-width: 25%;
+.col-md-9 {
+flex: 0 0 75%;
+max-width: 75%;
+transition: color 0.15s ease-in-out,
+background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+box-shadow 0.15s ease-in-out;
+.vl-img {
+margin-top: -5px;
+margin-bottom: 15px;
+.pavatar {
+width: 120px;
+height: 120px;
+border: 2px solid #ccc;
+box-shadow: 0 0 10px #000;
+margin-top: -50px;
+.profile-usertitle-name {
+font-size: 22px;
+margin-top: -110px;
+.a-input {
+margin-top: 10px;
+color: #ccc;
+.profile-usertitle-job {
+color: rgb(148, 144, 144);
+@media (max-width: 736px) {
+.rty {
+margin-top: -10px;
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+U+A640-A69F, U+FE2E-FE2F;
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+U+2212, U+2215, U+FEFF, U+FFFD;
+
+/* Aqui termina author file */
+/* Aqui empieza auctions file */
+/*! CSS Used from: https://edeline.ru/nft-demo/css/style.css ; media=all */
+:root {
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--gray: #4e5d78;
+--gray-dark: #343a40;
+--primary: #0684fe;
+--secondary: #f5f6f8;
+--success: #35ac80;
+--info: #5d3fff;
+--warning: #f7b731;
+--danger: #fe3f3e;
+--light: #f8f9fa;
+--dark: #131b24;
+--black: #000000;
+--white: #ffffff;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+"Noto Color Emoji";
+--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+"Liberation Mono", "Courier New", monospace;
+box-sizing: border-box;
+html {
+font-family: sans-serif;
+line-height: 1.15;
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+footer,
+header,
+nav {
+text-align: left;
+background-color: #ffffff;
+box-sizing: content-box;
+height: 0;
+ul {
+margin-top: 0;
+b {
+font-weight: bolder;
+color: #007bff;
+a:hover {
+color: #0056b3;
+svg {
+border-radius: 0;
+outline: 1px dotted;
+outline: 5px auto -webkit-focus-ring-color;
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+overflow: visible;
+button {
+text-transform: none;
+button,
+[type="button"] {
+-webkit-appearance: button;
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
+border-style: none;
+h2,
+margin-bottom: 0.5rem;
+font-size: 2rem;
+h5 {
+hr {
+margin-top: 1rem;
+margin-bottom: 1rem;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+margin-right: auto;
+margin-left: auto;
+max-width: 540px;
+max-width: 720px;
+max-width: 960px;
+@media (min-width: 1200px) {
+max-width: 1140px;
+.row {
+margin-right: -15px;
+margin-left: -15px;
+.col,
+.col-sm-4,
+.col-md-6,
+padding-right: 15px;
+padding-left: 15px;
+.col {
+flex-basis: 0;
+max-width: 100%;
+@media (min-width: 576px) {
+.col-sm-4 {
+flex: 0 0 33.33333%;
+max-width: 33.33333%;
+.col-md-6 {
+flex: 0 0 50%;
+max-width: 50%;
+.col-lg-5 {
+flex: 0 0 41.66667%;
+max-width: 41.66667%;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+padding: 0.375rem 0.75rem;
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+@media (prefers-reduced-motion: reduce) {
+transition: none;
+.btn:hover {
+color: #000000;
+.btn:focus {
+outline: 0;
+box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+.btn:disabled {
+opacity: 0.65;
+.btn-info {
+.btn-info:hover {
+.btn-info:focus {
+background-color: #3d19ff;
+border-color: #320cff;
+box-shadow: 0 0 0 0.2rem rgba(117, 92, 255, 0.5);
+.btn-info:disabled {
+background-color: #5d3fff;
+border-color: #5d3fff;
+.collapse:not(.show) {
+.nav {
+.nav-link {
+padding: 0.5rem 1rem;
+.nav-link:hover,
+.nav-link:focus {
+padding: 1rem 1rem;
+.navbar .container {
+justify-content: space-between;
+.navbar-brand {
+padding-top: 0.3125rem;
+padding-bottom: 0.3125rem;
+line-height: inherit;
+.navbar-brand:hover,
+.navbar-brand:focus {
+.navbar-nav {
+list-style: none;
+.navbar-nav .nav-link {
+.navbar-collapse {
+flex-basis: 100%;
+flex-grow: 1;
+padding: 0.25rem 0.75rem;
+font-size: 1.25rem;
+border: 1px solid transparent;
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+@media (max-width: 991.98px) {
+.navbar-expand-lg {
+flex-flow: row nowrap;
+justify-content: flex-start;
+.navbar-expand-lg .navbar-nav {
+flex-direction: row;
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 0.937rem;
+padding-left: 0.937rem;
+.navbar-expand-lg > .container {
+flex-wrap: nowrap;
+.navbar-expand-lg .navbar-collapse {
+display: flex !important;
+flex-basis: auto;
+.navbar-expand-lg .navbar-toggler {
+.navbar-dark .navbar-brand {
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+color: rgba(255, 255, 255, 0.75);
+color: rgba(255, 255, 255, 0.5);
+border-color: rgba(255, 255, 255, 0.1);
+.card {
+position: relative;
+min-width: 0;
+word-wrap: break-word;
+background-color: #fff;
+background-clip: border-box;
+border: 1px solid rgba(0, 0, 0, 0.125);
+.card-body {
+flex: 1 1 auto;
+min-height: 1px;
+padding: 1.25rem;
+.card-title {
+margin-bottom: 0.75rem;
+flex-shrink: 0;
+.card-img-top {
+border-top-left-radius: calc(0.25rem - 1px);
+border-top-right-radius: calc(0.25rem - 1px);
+.bg-dark {
+background-color: #131b24 !important;
+.d-none {
+.d-lg-none {
+display: none !important;
+.d-lg-block {
+display: block !important;
+.mt-2 {
+margin-top: 0.5rem !important;
+margin-top: 1.5rem !important;
+.my-4 {
+margin-bottom: 1.5rem !important;
+.mr-auto {
+margin-right: auto !important;
+.ml-auto {
+@media (min-width: 768px) {
+.my-md-0 {
+margin-bottom: 0 !important;
+.ml-md-auto {
+margin-left: auto !important;
+@media (min-width: 992px) {
+.mt-lg-0 {
+margin-top: 0 !important;
+@media print {
+*,
+*::before,
+*::after {
+text-shadow: none !important;
+box-shadow: none !important;
+a:not(.btn) {
+text-decoration: underline;
+img {
+page-break-inside: avoid;
+p,
+orphans: 3;
+widows: 3;
+h2 {
+page-break-after: avoid;
+.container {
+min-width: 992px !important;
+.navbar {
+display: none;
+p {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+font-size: calc(25px * 0.75);
+border-radius: 0.25rem;
+overflow: hidden;
+.avatar img {
+height: 100%;
+-o-object-fit: cover;
+object-fit: cover;
+-o-object-position: center;
+object-position: center;
+background-color: #0684fe;
+display: inline-flex;
+align-items: center;
+button:focus {
+outline: none;
+.btn-rounded {
+border-radius: 24px;
+.btn {
+padding: 15px 28px;
+.lead-footer {
+padding-top: 40px;
+padding-bottom: 40px;
+.lead-footer P {
+.lead-footer-dark {
+background: #131b24;
+.lead-footer-dark .lead-social-menu a {
+.lead-footer-dark .lead-social-menu a:not(:last-child) {
+.lead-footer-dark .lead-social-menu a .feather {
+.lead-footer-dark .footer-nav .nav-link {
+.footer-brand-wrapper {
+margin-bottom: 32px;
+.footer-text {
+margin-bottom: 0;
+.lead-main-footer {
+padding-top: 100px;
+padding-bottom: 130px;
+.nav-vertical {
+flex-direction: column;
+.nav-vertical .nav-link {
+padding-left: 0;
+padding-right: 0;
+.footer-nav .nav-link {
+color: #4e5d78;
+line-height: 1.69;
+padding-top: 0;
+padding-bottom: 0;
+.lead-social-menu {
+white-space: nowrap;
+.lead-social-menu a {
+color: inherit;
+.lead-social-menu a:not(:last-child) {
+margin-right: 16px;
+.lead-social-menu a .feather {
+height: 20px;
+width: auto;
+.navbar-dark .navbar-toggler {
+.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+color: #ffffff;
+.navbar-toggler {
+border: 0;
+.nav-item .btn {
+margin-left: 1rem;
+margin-right: 1rem;
+.navbar .navbar-nav .nav-link {
+font-size: 1rem;
+line-height: 1.5;
+padding: 0.75rem 0.937rem;
+/*! CSS Used from: https://edeline.ru/nft-demo/css/styles.css ; media=all */
+.sec-1 {
+padding-top: 50px;
+flex-wrap: wrap;
+justify-content: center;
+max-width: 250px;
+margin: 15px;
+background-color: #1c2227;
+.sec-1 > .card > .card-body {
+padding: 0;
+margin-top: 20px;
+.sec-1 > .card > .card-body > a > h5 {
+a {
+.sec-1 > .card > .card-body > a > h5:hover {
+color: rgb(34, 65, 238);
+text-decoration: none !important;
+.b-t-l {
+float: left;
+.b-t-r {
+width: 40%;
+float: right;
+text-align: right;
+.sec-t {
+margin-top: 100px;
+margin-left: 15px;
+.sec-t > b {
+color: rgb(50, 39, 202);
+.sec-t > h2 {
+color: #fff;
+.button-vl {
+background: transparent;
+border: 2px solid #fff;
+.button-vl:hover {
+width: 150px;
+background: rgba(76, 24, 219, 0.933);
+border-radius: 50px;
+border: 2px solid rgba(76, 24, 219, 0.933);
+font-weight: 500;
+padding: 10px;
+font-size: 19px;
+.avatar {
+width: 50px;
+height: 50px;
+.avatar > img {
+border-radius: 100px;
+.avatar-text {
+color: #888;
+display: flex;
+max-width: 150px;
+margin-left: 30px;
+margin-top: -37px;
+background-color: transparent;
+margin-bottom: 10px;
+.avatar-text:hover {
+font-size: 16px;
+color: #eee;
+.sec-1 > .card > .card-img-top {
+margin-top: 15px;
+border-radius: 10px;
+.footer-nav > .nav-link:hover {
+padding-left: 5px;
+.footer-nav > .nav-link {
+.lead-social-menu > a {
+background-color: rgb(52, 51, 61);
+padding: 8px;
+border-radius: 5px;
+.user-mob {
+font-size: 20px;
+text-decoration: none;
+margin-right: 15px;
+.lead-social-menu > a:hover {
+background-color: rgb(75, 74, 88);
+body {
+background: #070a0e;
+.menu-fix {
+position: fixed;
+box-shadow: 0 0 15px #000;
+.nav-link:hover {
+color: thistle !important;
+::-webkit-scrollbar {
+width: 10px;
+::-webkit-scrollbar-track {
+background: #182029;
+::-webkit-scrollbar-thumb {
+background: rgba(57, 48, 82, 0.808);
+::-webkit-scrollbar-thumb:hover {
+background: rgba(57, 48, 82, 0.623);
+transition: 0.3s;
+@media (max-width: 800px) {
+width: 350px !important;
+@media (max-width: 400px) {
+.sec-1 > .card {
+max-width: 310px;
+margin: 10px;
+.pages-header {
+height: 65vh;
+padding-top: 70px;
+background-image: url("https://edeline.ru/nft-demo/assets/img/header.jpg");
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.3;
+.pages-title {
+position: absolute;
+margin-top: -35vh;
+text-align: center;
+display: block;
+width: 100%;
+.pages-title > h2 {
+font-size: 60px;
+.pages-title > b {
+.pages-title > b > a {
+color: white;
+font-size: 18px;
+/*! CSS Used from: Embedded ; media=all */
+@media all {
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+display: inline-block;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1;
+.fa-chevron-right:before {
+content: "\f054";
+.fa-user:before {
+content: "\f007";
+.fa-wallet:before {
+content: "\f555";
+.fas {
+/*! CSS Used fontfaces */
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8ccewI9tScg.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8cce5I9tScg.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8cceyI9tScg.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8ccezI9tScg.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85gU1EQVg.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85pU1EQVg.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85iU1EQVg.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85jU1EQVg.woff2)
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85tU1E.woff2)
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5gU1EQVg.woff2)
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+U+FE2E-FE2F;
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5pU1EQVg.woff2)
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5iU1EQVg.woff2)
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5jU1EQVg.woff2)
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+font-family: "Nunito Sans";
+font-weight: 700;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2)
+format("woff2");
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+U+FEFF, U+FFFD;
+font-weight: 400;
+src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot);
+src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot?#iefix)
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff2)
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff)
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.ttf)
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.svg#fontawesome)
+@font-face {
+font-family: "Font Awesome 5 Free";
+font-style: normal;
+font-weight: 900;
+font-display: block;
+src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot);
+src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot?#iefix)
+format("embedded-opentype"),
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff2)
+format("woff2"),
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff)
+format("woff"),
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.ttf)
+format("truetype"),
+url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.svg#fontawesome)
+format("svg");
+}
+/* Aqui termina auctions file */
