@@ -1,0 +1,1423 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos -->
+    <style>
+      /*! CSS Used from: https://edeline.ru/nft-demo/css/style.css ; media=all */
+      @media all {
+        :root {
+          --blue: #007bff;
+          --indigo: #6610f2;
+          --purple: #6f42c1;
+          --pink: #e83e8c;
+          --red: #dc3545;
+          --orange: #fd7e14;
+          --yellow: #ffc107;
+          --green: #28a745;
+          --teal: #20c997;
+          --cyan: #17a2b8;
+          --white: #ffffff;
+          --gray: #4e5d78;
+          --gray-dark: #343a40;
+          --primary: #0684fe;
+          --secondary: #f5f6f8;
+          --success: #35ac80;
+          --info: #5d3fff;
+          --warning: #f7b731;
+          --danger: #fe3f3e;
+          --light: #f8f9fa;
+          --dark: #131b24;
+          --black: #000000;
+          --white: #ffffff;
+          --breakpoint-xs: 0;
+          --breakpoint-sm: 576px;
+          --breakpoint-md: 768px;
+          --breakpoint-lg: 992px;
+          --breakpoint-xl: 1200px;
+          --font-family-sans-serif: -apple-system, BlinkMacSystemFont,
+            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            "Noto Color Emoji";
+          --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+            "Liberation Mono", "Courier New", monospace;
+        }
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+        html {
+          font-family: sans-serif;
+          line-height: 1.15;
+          -webkit-text-size-adjust: 100%;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        footer,
+        header,
+        nav {
+          display: block;
+        }
+        body {
+          margin: 0;
+          font-family: "Nunito Sans";
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 1.5;
+          color: #000000;
+          text-align: left;
+          background-color: #ffffff;
+        }
+        hr {
+          box-sizing: content-box;
+          height: 0;
+          overflow: visible;
+        }
+        h2,
+        h3 {
+          margin-top: 0;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+        ul {
+          margin-top: 0;
+          margin-bottom: 1rem;
+        }
+        b {
+          font-weight: bolder;
+        }
+        a {
+          color: #007bff;
+          text-decoration: none;
+          background-color: transparent;
+        }
+        a:hover {
+          color: #0056b3;
+          text-decoration: underline;
+        }
+        img {
+          vertical-align: middle;
+          border-style: none;
+        }
+        svg {
+          overflow: hidden;
+          vertical-align: middle;
+        }
+        button {
+          border-radius: 0;
+        }
+        button:focus {
+          outline: 1px dotted;
+          outline: 5px auto -webkit-focus-ring-color;
+        }
+        input,
+        button,
+        textarea {
+          margin: 0;
+          font-family: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+        button,
+        input {
+          overflow: visible;
+        }
+        button {
+          text-transform: none;
+        }
+        button,
+        [type="button"],
+        [type="submit"] {
+          -webkit-appearance: button;
+        }
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+          padding: 0;
+          border-style: none;
+        }
+        textarea {
+          overflow: auto;
+          resize: vertical;
+        }
+        h2,
+        h3 {
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1.75rem;
+        }
+        hr {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          border: 0;
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .container {
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        @media (min-width: 576px) {
+          .container {
+            max-width: 540px;
+          }
+        }
+        @media (min-width: 768px) {
+          .container {
+            max-width: 720px;
+          }
+        }
+        @media (min-width: 992px) {
+          .container {
+            max-width: 960px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .container {
+            max-width: 1140px;
+          }
+        }
+        @media (min-width: 576px) {
+          .container {
+            max-width: 540px;
+          }
+        }
+        @media (min-width: 768px) {
+          .container {
+            max-width: 720px;
+          }
+        }
+        @media (min-width: 992px) {
+          .container {
+            max-width: 960px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .container {
+            max-width: 1140px;
+          }
+        }
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: -15px;
+          margin-left: -15px;
+        }
+        .col-12,
+        .col,
+        .col-md-6,
+        .col-lg-5 {
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+        .col {
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%;
+        }
+        .col-12 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        @media (min-width: 768px) {
+          .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+          }
+        }
+        @media (min-width: 992px) {
+          .col-lg-5 {
+            flex: 0 0 41.66667%;
+            max-width: 41.66667%;
+          }
+        }
+        .form-control {
+          display: block;
+          width: 100%;
+          height: calc(1.33em + 2rem + 2px);
+          padding: 1rem 1.062rem;
+          font-size: 0.75rem;
+          font-weight: 700;
+          line-height: 1.33;
+          color: #4e5d78;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #d9dfe7;
+          border-radius: 0.25rem;
+          transition: border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .form-control {
+            transition: none;
+          }
+        }
+        .form-control::-ms-expand {
+          background-color: transparent;
+          border: 0;
+        }
+        .form-control:-moz-focusring {
+          color: transparent;
+          text-shadow: 0 0 0 #4e5d78;
+        }
+        .form-control:focus {
+          color: #495057;
+          background-color: #fff;
+          border-color: #80bdff;
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .form-control::-webkit-input-placeholder {
+          color: #6c757d;
+          opacity: 1;
+        }
+        .form-control::-moz-placeholder {
+          color: #6c757d;
+          opacity: 1;
+        }
+        .form-control:-ms-input-placeholder {
+          color: #6c757d;
+          opacity: 1;
+        }
+        .form-control::-ms-input-placeholder {
+          color: #6c757d;
+          opacity: 1;
+        }
+        .form-control::placeholder {
+          color: #6c757d;
+          opacity: 1;
+        }
+        .form-control:disabled {
+          background-color: #f1f1f1;
+          opacity: 1;
+        }
+        textarea.form-control {
+          height: auto;
+        }
+        .form-group {
+          margin-bottom: 1rem;
+        }
+        .btn {
+          display: inline-block;
+          font-weight: 400;
+          color: #000000;
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          background-color: transparent;
+          border: 1px solid transparent;
+          padding: 0.375rem 0.75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          border-radius: 0.25rem;
+          transition: color 0.15s ease-in-out,
+            background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .btn {
+            transition: none;
+          }
+        }
+        .btn:hover {
+          color: #000000;
+          text-decoration: none;
+        }
+        .btn:focus {
+          outline: 0;
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .btn:disabled {
+          opacity: 0.65;
+        }
+        .btn-info {
+          color: #ffffff;
+          background-color: #5d3fff;
+          border-color: #5d3fff;
+        }
+        .btn-info:hover {
+          color: #ffffff;
+          background-color: #3d19ff;
+          border-color: #320cff;
+        }
+        .btn-info:focus {
+          color: #ffffff;
+          background-color: #3d19ff;
+          border-color: #320cff;
+          box-shadow: 0 0 0 0.2rem rgba(117, 92, 255, 0.5);
+        }
+        .btn-info:disabled {
+          color: #ffffff;
+          background-color: #5d3fff;
+          border-color: #5d3fff;
+        }
+        .collapse:not(.show) {
+          display: none;
+        }
+        .nav {
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 0;
+          margin-bottom: 0;
+          list-style: none;
+        }
+        .nav-link {
+          display: block;
+          padding: 0.5rem 1rem;
+        }
+        .nav-link:hover,
+        .nav-link:focus {
+          text-decoration: none;
+        }
+        .navbar {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem 1rem;
+        }
+        .navbar .container {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .navbar-brand {
+          display: inline-block;
+          padding-top: 0.3125rem;
+          padding-bottom: 0.3125rem;
+          margin-right: 1rem;
+          font-size: 1.25rem;
+          line-height: inherit;
+          white-space: nowrap;
+        }
+        .navbar-brand:hover,
+        .navbar-brand:focus {
+          text-decoration: none;
+        }
+        .navbar-nav {
+          display: flex;
+          flex-direction: column;
+          padding-left: 0;
+          margin-bottom: 0;
+          list-style: none;
+        }
+        .navbar-nav .nav-link {
+          padding-right: 0;
+          padding-left: 0;
+        }
+        .navbar-collapse {
+          flex-basis: 100%;
+          flex-grow: 1;
+          align-items: center;
+        }
+        .navbar-toggler {
+          padding: 0.25rem 0.75rem;
+          font-size: 1.25rem;
+          line-height: 1;
+          background-color: transparent;
+          border: 1px solid transparent;
+          border-radius: 0.25rem;
+        }
+        .navbar-toggler:hover,
+        .navbar-toggler:focus {
+          text-decoration: none;
+        }
+        @media (max-width: 991.98px) {
+          .navbar-expand-lg > .container {
+            padding-right: 0;
+            padding-left: 0;
+          }
+        }
+        @media (min-width: 992px) {
+          .navbar-expand-lg {
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+          }
+          .navbar-expand-lg .navbar-nav {
+            flex-direction: row;
+          }
+          .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 0.937rem;
+            padding-left: 0.937rem;
+          }
+          .navbar-expand-lg > .container {
+            flex-wrap: nowrap;
+          }
+          .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+          }
+          .navbar-expand-lg .navbar-toggler {
+            display: none;
+          }
+        }
+        .navbar-dark .navbar-brand {
+          color: #fff;
+        }
+        .navbar-dark .navbar-brand:hover,
+        .navbar-dark .navbar-brand:focus {
+          color: #fff;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover,
+        .navbar-dark .navbar-nav .nav-link:focus {
+          color: rgba(255, 255, 255, 0.75);
+        }
+        .navbar-dark .navbar-toggler {
+          color: rgba(255, 255, 255, 0.5);
+          border-color: rgba(255, 255, 255, 0.1);
+        }
+        .card {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          min-width: 0;
+          word-wrap: break-word;
+          background-color: #fff;
+          background-clip: border-box;
+          border: 1px solid rgba(0, 0, 0, 0.125);
+          border-radius: 0.25rem;
+        }
+        .bg-dark {
+          background-color: #131b24 !important;
+        }
+        .d-none {
+          display: none !important;
+        }
+        @media (min-width: 992px) {
+          .d-lg-none {
+            display: none !important;
+          }
+          .d-lg-block {
+            display: block !important;
+          }
+        }
+        .mb-0 {
+          margin-bottom: 0 !important;
+        }
+        .mt-2 {
+          margin-top: 0.5rem !important;
+        }
+        .mt-3 {
+          margin-top: 1rem !important;
+        }
+        .my-4 {
+          margin-top: 1.5rem !important;
+        }
+        .mb-4,
+        .my-4 {
+          margin-bottom: 1.5rem !important;
+        }
+        .mt-5 {
+          margin-top: 3rem !important;
+        }
+        .mr-auto {
+          margin-right: auto !important;
+        }
+        .ml-auto {
+          margin-left: auto !important;
+        }
+        @media (min-width: 576px) {
+          .mt-sm-4 {
+            margin-top: 1.5rem !important;
+          }
+        }
+        @media (min-width: 768px) {
+          .my-md-0 {
+            margin-top: 0 !important;
+          }
+          .my-md-0 {
+            margin-bottom: 0 !important;
+          }
+          .ml-md-auto {
+            margin-left: auto !important;
+          }
+        }
+        @media (min-width: 992px) {
+          .mt-lg-0 {
+            margin-top: 0 !important;
+          }
+          .mb-lg-5 {
+            margin-bottom: 3rem !important;
+          }
+        }
+        @media print {
+          *,
+          *::before,
+          *::after {
+            text-shadow: none !important;
+            box-shadow: none !important;
+          }
+          a:not(.btn) {
+            text-decoration: underline;
+          }
+          img {
+            page-break-inside: avoid;
+          }
+          p,
+          h2,
+          h3 {
+            orphans: 3;
+            widows: 3;
+          }
+          h2,
+          h3 {
+            page-break-after: avoid;
+          }
+          body {
+            min-width: 992px !important;
+          }
+          .container {
+            min-width: 992px !important;
+          }
+          .navbar {
+            display: none;
+          }
+        }
+        p {
+          line-height: 1.69;
+        }
+        button:focus {
+          outline: none;
+        }
+        .btn-rounded {
+          border-radius: 24px;
+        }
+        .btn {
+          padding: 15px 28px;
+          font-weight: 700;
+          line-height: 1;
+        }
+        .lead-footer {
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+        .lead-footer P {
+          line-height: 1.5;
+        }
+        .lead-footer-dark {
+          background: #131b24;
+          color: #ffffff;
+        }
+        .lead-footer-dark .lead-social-menu a {
+          color: inherit;
+          display: inline-block;
+          line-height: 1;
+        }
+        .lead-footer-dark .lead-social-menu a:not(:last-child) {
+          margin-right: 16px;
+        }
+        .lead-footer-dark .lead-social-menu a .feather {
+          height: 20px;
+          width: auto;
+        }
+        .lead-footer-dark .footer-nav .nav-link {
+          color: inherit;
+        }
+        .footer-brand-wrapper {
+          margin-bottom: 32px;
+        }
+        .footer-text {
+          line-height: 1.69;
+          margin-bottom: 0;
+        }
+        .lead-main-footer {
+          padding-top: 100px;
+          padding-bottom: 130px;
+        }
+        .nav-vertical {
+          flex-direction: column;
+        }
+        .nav-vertical .nav-link {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .footer-nav .nav-link {
+          color: #4e5d78;
+          line-height: 1.69;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .lead-social-menu {
+          white-space: nowrap;
+        }
+        .lead-social-menu a {
+          color: inherit;
+          display: inline-block;
+          line-height: 1;
+        }
+        .lead-social-menu a:not(:last-child) {
+          margin-right: 16px;
+        }
+        .lead-social-menu a .feather {
+          height: 20px;
+          width: auto;
+        }
+        .navbar-dark .navbar-toggler {
+          color: #ffffff;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+          color: #ffffff;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover,
+        .navbar-dark .navbar-nav .nav-link:focus {
+          color: #ffffff;
+        }
+        .navbar-toggler {
+          border: 0;
+        }
+        .nav-item .btn {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+        .navbar .navbar-nav .nav-link {
+          font-size: 1rem;
+          line-height: 1.5;
+          padding: 0.75rem 0.937rem;
+        }
+      }
+      /*! CSS Used from: https://edeline.ru/nft-demo/css/styles.css ; media=all */
+      @media all {
+        .vfg {
+          margin-top: 50px;
+          text-align: center;
+        }
+        .intro-content > span {
+          color: blue;
+          font-size: 17px;
+          font-weight: 800;
+        }
+        .intro-content > h3 {
+          color: rgb(255, 255, 255);
+          font-weight: 800;
+          margin-top: -10px;
+        }
+        .item-form {
+          width: 100%;
+          margin: auto;
+          background-color: rgb(23, 20, 29);
+          padding: 20px;
+          margin-top: -20px;
+          border-radius: 10px;
+        }
+        .form-control {
+          background: rgb(8, 7, 10);
+          font-size: 16px;
+          color: #888;
+          border: 0;
+          border-radius: 0;
+        }
+        .form-control:active,
+        .form-control::after,
+        .form-control:hover,
+        .form-control:focus,
+        .form-control::before {
+          background: rgb(8, 7, 10);
+          font-size: 16px;
+          color: #888;
+          border: 0;
+          border-radius: 0;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .button-vl {
+          width: 150px;
+          background: transparent;
+          border-radius: 50px;
+          border: 2px solid #fff;
+          transition: 0.3s;
+          color: white;
+          font-weight: 500;
+          padding: 10px;
+          font-size: 19px;
+        }
+        .button-vl:hover {
+          width: 150px;
+          background: rgba(76, 24, 219, 0.933);
+          border-radius: 50px;
+          border: 2px solid rgba(76, 24, 219, 0.933);
+          transition: 0.3s;
+          color: white;
+          font-weight: 500;
+          padding: 10px;
+          font-size: 19px;
+        }
+        .footer-nav > .nav-link:hover {
+          padding-left: 5px;
+          transition: 0.3s;
+        }
+        .footer-nav > .nav-link {
+          transition: 0.3s;
+        }
+        .lead-social-menu > a {
+          background-color: rgb(52, 51, 61);
+          padding: 8px;
+          border-radius: 5px;
+          transition: 0.3s;
+        }
+        .user-mob {
+          color: white;
+          font-size: 20px;
+          text-decoration: none;
+          margin-right: 15px;
+        }
+        .lead-social-menu > a:hover {
+          background-color: rgb(75, 74, 88);
+          transition: 0.3s;
+        }
+        body {
+          background: #070a0e;
+        }
+        .menu-fix {
+          width: 100%;
+          position: fixed;
+          box-shadow: 0 0 15px #000;
+        }
+        .nav-link:hover {
+          color: thistle !important;
+        }
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #182029;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: rgba(57, 48, 82, 0.808);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: rgba(57, 48, 82, 0.623);
+          transition: 0.3s;
+        }
+        .pages-header {
+          height: 65vh;
+          padding-top: 70px;
+          background-image: url("https://edeline.ru/nft-demo/assets/img/header.jpg");
+          background-color: #cccccc;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: 0.3;
+        }
+        .pages-title {
+          position: absolute;
+          margin-top: -35vh;
+          text-align: center;
+          display: block;
+          width: 100%;
+        }
+        .pages-title > h2 {
+          color: white;
+          font-weight: 900;
+          font-size: 60px;
+          line-height: 1;
+        }
+        .pages-title > b {
+          color: white;
+          font-weight: 900;
+          font-size: 18px;
+        }
+        .pages-title > b > a {
+          color: white;
+          font-weight: 900;
+          font-size: 18px;
+        }
+      }
+      /*! CSS Used from: Embedded ; media=all */
+      @media all {
+        .fas {
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          display: inline-block;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          line-height: 1;
+        }
+        .fa-chevron-right:before {
+          content: "\f054";
+        }
+        .fa-user:before {
+          content: "\f007";
+        }
+        .fa-wallet:before {
+          content: "\f555";
+        }
+        .fas {
+          font-family: "Font Awesome 5 Free";
+        }
+        .fas {
+          font-weight: 900;
+        }
+      }
+      /*! CSS Used fontfaces */
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8ccewI9tScg.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8cce5I9tScg.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8cceyI9tScg.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8ccezI9tScg.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85gU1EQVg.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85pU1EQVg.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85iU1EQVg.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85jU1EQVg.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc9iB85tU1E.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5gU1EQVg.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5pU1EQVg.woff2)
+          format("woff2");
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5iU1EQVg.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5jU1EQVg.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/nunitosans/v11/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot);
+        src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff2)
+            format("woff2"),
+          url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.woff)
+            format("woff"),
+          url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.ttf)
+            format("truetype"),
+          url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-regular-400.svg#fontawesome)
+            format("svg");
+      }
+      @font-face {
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 900;
+        font-display: block;
+        src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot);
+        src: url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.eot?#iefix)
+            format("embedded-opentype"),
+          url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff2)
+            format("woff2"),
+          url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.woff)
+            format("woff"),
+          url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.ttf)
+            format("truetype"),
+          url(https://ka-f.fontawesome.com/releases/v5.15.4/webfonts/free-fa-solid-900.svg#fontawesome)
+            format("svg");
+      }
+    </style>
+    <title>Contacts | KTX-NFT Marketplace</title>
+    <!-- FAVICON -->
+  </head>
+
+  <body>
+    <header class="lead-demo menu-fix" style="z-index: 9999999999">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="https://edeline.ru/nft-demo/"
+            ><img
+              src="https://edeline.ru/nft-demo/assets/img/logo.png"
+              alt="logo"
+              width="70"
+          /></a>
+          <div class="ml-auto d-lg-none">
+            <a href="https://edeline.ru/nft-demo/login.html" class="user-mob"
+              ><i class="fas fa-user" aria-hidden="true"></i
+            ></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#leadUIDemoNav-2"
+            aria-controls="leadUIDemoNav-2"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-menu"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="leadUIDemoNav-2">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="https://edeline.ru/nft-demo/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://edeline.ru/nft-demo/explore.html"
+                  >Explore</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://edeline.ru/nft-demo/auctions.html"
+                  >Auctions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://edeline.ru/nft-demo/collections.html"
+                  >Collections</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://edeline.ru/nft-demo/author.html"
+                  >Author</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://edeline.ru/nft-demo/authors.html"
+                  >Authors</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://edeline.ru/nft-demo/create.html"
+                  >Craete</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://edeline.ru/nft-demo/contacts.html"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item d-none d-lg-block">
+                <a
+                  class="nav-link"
+                  href="https://edeline.ru/nft-demo/login.html"
+                  ><i class="fas fa-user" aria-hidden="true"></i> Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://edeline.ru/nft-demo/wallet.html"
+                  class="btn btn-rounded btn-info"
+                  ><i class="fas fa-wallet" aria-hidden="true"></i> Wallet
+                  Connect</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="pages-header"></div>
+    <div class="pages-title">
+      <h2>Contacts</h2>
+      <br />
+      <b
+        ><a href="https://edeline.ru/nft-demo/">Home</a>
+        <i class="fas fa-chevron-right" aria-hidden="true"></i> Contacts</b
+      >
+    </div>
+    <!-- Intro -->
+    <div class="intro mt-5 mt-lg-0 mb-4 mb-lg-5">
+      <div class="intro-content vfg">
+        <span>Contact Us</span>
+        <h3 class="mt-3 mb-0">Get In Touch</h3>
+      </div>
+    </div>
+    <!-- Item Form -->
+    <div class="container" style="margin-bottom: 100px">
+      <div class="row">
+        <form
+          class="item-form card no-hover rtyy"
+          action="https://edeline.ru/nft-demo/mail.php"
+          method="POST"
+        >
+          <br />
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  placeholder="Name"
+                  required="required"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Email"
+                  required="required"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="sub"
+                  placeholder="Subject"
+                  required="required"
+                /><br />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="mess"
+                  placeholder="Message"
+                  cols="30"
+                  rows="7"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="col-12" style="text-align: center">
+              <button class="btn mt-3 mt-sm-4 button-vl" type="submit">
+                Send</button
+              ><br /><br />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- partial:partials/_footer.html -->
+    <footer
+      class="lead-footer lead-main-footer lead-footer-dark"
+      style="background-color: rgb(18, 17, 24)"
+    >
+      <div class="container" style="margin-bottom: -100px">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <div class="footer-brand-wrapper">
+              <img
+                src="https://edeline.ru/nft-demo/assets/img/logo.png"
+                alt="logo white"
+                width="160"
+              />
+            </div>
+
+            <nav class="lead-social-menu">
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-twitter"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  ></path></svg
+              ></a>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path></svg
+              ></a>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-linkedin"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle></svg
+              ></a>
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-instagram"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
+              ></a>
+            </nav>
+          </div>
+          <div class="col-lg-5 col-md-6 ml-md-auto">
+            <div class="row">
+              <div class="col">
+                <nav class="nav footer-nav nav-vertical my-4 my-md-0">
+                  <a
+                    href="https://edeline.ru/nft-demo/author.html"
+                    class="nav-link"
+                    >Profile</a
+                  >
+                  <a
+                    href="https://edeline.ru/nft-demo/login.html"
+                    class="nav-link"
+                    >Login</a
+                  >
+                  <a
+                    href="https://edeline.ru/nft-demo/create.html"
+                    class="nav-link"
+                    >Create</a
+                  >
+                  <a
+                    href="https://edeline.ru/nft-demo/wallet.html"
+                    class="nav-link"
+                    >Wallet</a
+                  >
+                </nav>
+              </div>
+              <div class="col">
+                <nav class="nav footer-nav nav-vertical my-4 my-md-0">
+                  <a
+                    href="https://edeline.ru/nft-demo/auctions.html"
+                    class="nav-link"
+                    >Auctions</a
+                  >
+                  <a
+                    href="https://edeline.ru/nft-demo/collections.html"
+                    class="nav-link"
+                    >Collections</a
+                  >
+                  <a
+                    href="https://edeline.ru/nft-demo/contacts.html"
+                    class="nav-link"
+                    >Contact</a
+                  >
+                  <a
+                    href="https://edeline.ru/nft-demo/item.html"
+                    class="nav-link"
+                    >Items</a
+                  >
+                </nav>
+              </div>
+              <div class="col">
+                <nav class="nav footer-nav nav-vertical my-4 my-md-0">
+                  <a href="#" class="nav-link">Community</a>
+                  <a href="#" class="nav-link">Help center</a>
+                  <a href="#" class="nav-link">Support</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="footer-text" style="text-align: center">
+          ©2022 KTX-NFT. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- partial -->
+  </body>
+</html>
