@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Navbar = () => (
   <>
     <header className="lead-demo menu-fix" style={{ zIndex: 9999999999 }}>
@@ -11,12 +13,11 @@ export const Navbar = () => (
             />
           </a>
           <div className="ml-auto d-lg-none">
-            <a
-              href="https://edeline.ru/nft-demo/login.html"
-              className="user-mob"
-            >
-              <i className="fas fa-user" aria-hidden="true" />
-            </a>
+            <Link href="/login">
+              <a className="user-mob">
+                <i className="fas fa-user" aria-hidden="true" />
+              </a>
+            </Link>
           </div>
           <button
             className="navbar-toggler"
@@ -51,57 +52,70 @@ export const Navbar = () => (
           >
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="/index.html">
-                  Home
-                </a>
+                <Link href="/">
+                  <a className="nav-link">Home</a>
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/explore.html">
-                  Explore
-                </a>
+                <Link href="/explore">
+                  <a className="nav-link">Explore</a>
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/auctions.html">
-                  Auctions
-                </a>
+                <Link href="/auctions">
+                  <a className="nav-link">Auctions</a>
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/collections.html">
-                  Collections
-                </a>
+                <Link href="/collections">
+                  <a className="nav-link">Collections</a>
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/author.html">
-                  Author
-                </a>
+                <Link href="/author">
+                  <a className="nav-link">Author</a>
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/authors.html">
-                  Authors
-                </a>
+                <Link href="/authors">
+                  <a className="nav-link">Authors</a>
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/create.html">
-                  Craete
-                </a>
+                <Link href="/create">
+                  <a className="nav-link">Craete</a>
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/contacts.html">
-                  Contacts
-                </a>
+                <Link href="/contacts">
+                  <a className="nav-link">Contacts</a>
+                </Link>
               </li>
             </ul>
+            
             <ul className="navbar-nav">
               <li className="nav-item d-none d-lg-block">
-                <a className="nav-link" href="/login.html">
-                  <i className="fas fa-user" aria-hidden="true" /> Login
-                </a>
+                <Link href="/login">
+                  <a className="nav-link">
+                    <i className="fas fa-user" aria-hidden="true" /> Login
+                  </a>
+                </Link>
               </li>
+
               <li className="nav-item">
-                <a href="/wallet.html" className="btn btn-rounded btn-info">
-                  <i className="fas fa-wallet" aria-hidden="true" /> Wallet
-                  Connect
-                </a>
+                <Link href="/wallet">
+                  <a className="btn btn-rounded btn-info">
+                    <i className="fas fa-wallet" aria-hidden="true" /> Wallet
+                    Connect
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -110,4 +124,3 @@ export const Navbar = () => (
     </header>
   </>
 );
-
