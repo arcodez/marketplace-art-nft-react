@@ -481,7 +481,125 @@ const ItemPage = () => {
             </a>
           </div>
         </div>
-      </Layout>
+        
+        <style jsx global>{`
+        /*! CSS Used from: https://edeline.ru/nft-demo/css/style.css ; media=all */
+        @media all{
+        *,*::before,*::after{box-sizing:border-box;}
+        section{display:block;}
+        h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem;}
+        p{margin-top:0;margin-bottom:1rem;}
+        ul{margin-top:0;margin-bottom:1rem;}
+        strong{font-weight:bolder;}
+        a{color:#007bff;text-decoration:none;background-color:transparent;}
+        a:hover{color:#0056b3;text-decoration:underline;}
+        img{vertical-align:middle;border-style:none;}
+        h3,h4,h5,h6{margin-bottom:0.5rem;font-weight:600;line-height:1.5;}
+        h3{font-size:1.75rem;}
+        h4{font-size:1.5rem;}
+        h5{font-size:1.25rem;}
+        h6{font-size:1rem;}
+        .list-unstyled{padding-left:0;list-style:none;}
+        .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+        @media (min-width: 576px){
+        .container{max-width:540px;}
+        }
+        @media (min-width: 768px){
+        .container{max-width:720px;}
+        }
+        @media (min-width: 992px){
+        .container{max-width:960px;}
+        }
+        @media (min-width: 1200px){
+        .container{max-width:1140px;}
+        }
+        @media (min-width: 576px){
+        .container{max-width:540px;}
+        }
+        @media (min-width: 768px){
+        .container{max-width:720px;}
+        }
+        @media (min-width: 992px){
+        .container{max-width:960px;}
+        }
+        @media (min-width: 1200px){
+        .container{max-width:1140px;}
+        }
+        .row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+        .col-12,.col-lg-5,.col-lg-6{position:relative;width:100%;padding-right:15px;padding-left:15px;}
+        .col-12{flex:0 0 100%;max-width:100%;}
+        @media (min-width: 992px){
+        .col-lg-5{flex:0 0 41.66667%;max-width:41.66667%;}
+        .col-lg-6{flex:0 0 50%;max-width:50%;}
+        }
+        .fade{transition:opacity 0.15s linear;}
+        @media (prefers-reduced-motion: reduce){
+        .fade{transition:none;}
+        }
+        .fade:not(.show){opacity:0;}
+        .nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none;}
+        .nav-tabs{border-bottom:1px solid #e9ecf1;}
+        .tab-content>.tab-pane{display:none;}
+        .tab-content>.active{display:block;}
+        .card{position:relative;display:flex;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0, 0, 0, 0.125);border-radius:0.25rem;}
+        .rounded-circle{border-radius:50%!important;}
+        .d-flex{display:flex!important;}
+        .justify-content-between{justify-content:space-between!important;}
+        .align-items-center{align-items:center!important;}
+        .m-0{margin:0!important;}
+        .mt-0{margin-top:0!important;}
+        .mt-2{margin-top:0.5rem!important;}
+        .mb-2{margin-bottom:0.5rem!important;}
+        .ml-2{margin-left:0.5rem!important;}
+        .mt-3{margin-top:1rem!important;}
+        .mr-3{margin-right:1rem!important;}
+        .ml-3{margin-left:1rem!important;}
+        .mt-4{margin-top:1.5rem!important;}
+        .mt-5{margin-top:3rem!important;}
+        @media (min-width: 992px){
+        .mt-lg-0{margin-top:0!important;}
+        .px-lg-2{padding-right:0.5rem!important;}
+        .px-lg-2{padding-left:0.5rem!important;}
+        }
+        .text-center{text-align:center!important;}
+        @media print{
+        *,*::before,*::after{text-shadow:none!important;box-shadow:none!important;}
+        a:not(.btn){text-decoration:underline;}
+        img{page-break-inside:avoid;}
+        p,h3{orphans:3;widows:3;}
+        h3{page-break-after:avoid;}
+        .container{min-width:992px!important;}
+        }
+        p{line-height:1.69;}
+        .avatar-sm{width:18px;height:18px;font-size:calc(18px * 0.35);}
+        .tab-pane.active{-webkit-animation:slide-down 0.5s ease-out;animation:slide-down 0.5s ease-out;}
+        }
+        /*! CSS Used from: https://edeline.ru/nft-demo/css/styles.css ; media=all */
+        @media all{
+        .item-details-area>.container{background-color:#131920;padding:20px;padding-top:50px;margin-top:90px;padding-right:50px;margin-bottom:150px;border-radius:10px;}
+        .qwertyy{color:white;font-weight:800;padding-bottom:10px;}
+        .qwertyt{color:rgb(148, 145, 145);font-weight:400;font-size:16px;}
+        .vbh-c{background:#0f1318;padding:10px;}
+        .item-thumb>img{width:90%;border-radius:10px;}
+        .tab-content,.nav-tabs{margin-left:20px;margin-top:20px;padding-bottom:10px;}
+        .rounded-circle{width:40px;height:40px;}
+        .vfgg{color:rgb(153, 152, 152);font-size:16px;}
+        .nav-tabs>li>a{color:white;transition:0.3s;}
+        .nav-tabs>li>a:hover{color:rgb(78, 47, 216);transition:0.3s;}
+        .nav-tabs>li>.active{color:rgb(78, 47, 216);transition:0.3s;}
+        .nav-tabs>li{margin-right:15px;}
+        a{text-decoration:none!important;}
+        .button-vl{width:150px;background:transparent;border-radius:50px;border:2px solid #fff;transition:0.3s;color:white;font-weight:500;padding:10px;font-size:19px;}
+        .button-vl:hover{width:150px;background:rgba(76, 24, 219, 0.933);border-radius:50px;border:2px solid rgba(76, 24, 219, 0.933);transition:0.3s;color:white;font-weight:500;padding:10px;font-size:19px;}
+        ::-webkit-scrollbar{width:10px;}
+        ::-webkit-scrollbar-track{background:#182029;}
+        ::-webkit-scrollbar-thumb{background:rgba(57, 48, 82, 0.808);}
+        ::-webkit-scrollbar-thumb:hover{background:rgba(57, 48, 82, 0.623);transition:0.3s;}
+        }
+        /*! CSS Used keyframes */
+        @-webkit-keyframes slide-down{0%{opacity:0;transform:translateY(15%);}100%{opacity:1;transform:translateY(0);}}
+        @keyframes slide-down{0%{opacity:0;transform:translateY(15%);}100%{opacity:1;transform:translateY(0);}}
+        `}</style></Layout>
       
     )
 }

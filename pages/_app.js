@@ -1,7 +1,5 @@
-import '../styles/globals.css'
-import '../styles/css_total.css'
-import '../styles/art/contacts.css'
 import '../styles/art/item.css'
+import '../styles/art/contacts.css'
 import '../styles/art/login.css'
 import '../styles/art/wallet.css'
 
