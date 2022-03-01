@@ -1,17 +1,22 @@
 import React from "react";
 import { Layout } from "../Layout";
 
+const author = {
+  nombre: "Abel Rodriguez",
+  profile_img: "https://avatars.githubusercontent.com/u/69878476?v=4"
+}
+
 export const AuthorPage = () => {
   return (
     <Layout>
       <div>
         <div className="pages-header" />
         <div className="pages-title">
-          <h2>Marcus Doe</h2>
+          <h2>{author.nombre}</h2>
           <br />
           <b>
             <a href="https://edeline.ru/nft-demo/author.html">Authors</a>
-            <i className="fas fa-chevron-right" aria-hidden="true" /> Marcus Doe
+            <i className="fas fa-chevron-right" aria-hidden="true" /> {author.nombre} 
           </b>
         </div>
         <div className="container">
@@ -25,7 +30,7 @@ export const AuthorPage = () => {
                 {/* SIDEBAR USERPIC */}
                 <div className="profile-userpic">
                   <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_4.jpg"
+                    src={author.profile_img}
                     className="img-responsive pavatar"
                     alt="user"
                   />
@@ -33,7 +38,7 @@ export const AuthorPage = () => {
                 {/* END SIDEBAR USERPIC */}
                 {/* SIDEBAR USER TITLE */}
                 <div className="profile-usertitle">
-                  <div className="profile-usertitle-name">Marcus Doe</div>
+                  <div className="profile-usertitle-name">{author.nombre}</div>
                   <div className="profile-usertitle-job">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </div>
