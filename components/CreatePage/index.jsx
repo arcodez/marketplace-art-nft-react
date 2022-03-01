@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "../Layout";
 
-const CreatePage = () => {
+export const CreatePage = () => {
   return (
     <Layout>
       <div className="pages-header" />
@@ -241,4 +241,3 @@ const CreatePage = () => {
   );
 };
 
-export default CreatePage;
