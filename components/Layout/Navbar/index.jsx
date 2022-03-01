@@ -99,7 +99,7 @@ export const Navbar = () => (
                 </Link>
               </li>
             </ul>
-            
+
             <ul className="navbar-nav">
               <li className="nav-item d-none d-lg-block">
                 <Link href="/login">
