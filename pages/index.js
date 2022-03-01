@@ -1,7 +1,7 @@
 import IndexPage from "../components/IndexPage"
 
 const Home = () => {
-   return <IndexPage /> 
+   return <h1>Welcome to the art page</h1> 
 }
 
 export default Home
