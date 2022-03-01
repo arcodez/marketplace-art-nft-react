@@ -1,7 +1,7 @@
-import IndexPage from "../components/IndexPage"
+import { IndexPage } from "../components/IndexPage";
 
 const Home = () => {
-   return <IndexPage /> 
-}
+  return <IndexPage />;
+};
 
-export default Home
+export default Home;
