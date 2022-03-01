@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "../Layout";
 
 export const CreatePage = () => {
-  return (
+  return ( 
     <Layout>
       <div className="pages-header" />
       <div className="pages-title">
