@@ -1,7 +1,9 @@
 import { AuthorPage } from "../components/AuthorPage";
 
-export function Author() {
+function Author() {
     return(
      <AuthorPage/>   
     )
 }
+
+export default Author
