@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Footer = () => (
   <footer
     className="lead-footer lead-main-footer lead-footer-dark"
@@ -88,34 +90,38 @@ export const Footer = () => (
           <div className="row">
             <div className="col">
               <nav className="nav footer-nav nav-vertical my-4 my-md-0">
-                <a href="/author.html" className="nav-link">
-                  Profile
-                </a>
-                <a href="/login.html" className="nav-link">
-                  Login
-                </a>
-                <a href="/create.html" className="nav-link">
-                  Create
-                </a>
-                <a href="/wallet.html" className="nav-link">
-                  Wallet
-                </a>
+                <Link href="/author">
+                  <a className="nav-link">Profile</a>
+                </Link>
+
+                <Link href="/login">
+                  <a className="nav-link">Login</a>
+                </Link>
+                <Link href="/create">
+                  <a className="nav-link">Create</a>
+                </Link>
+                <Link href="/wallet">
+                  <a className="nav-link">Wallet</a>
+                </Link>
               </nav>
             </div>
             <div className="col">
               <nav className="nav footer-nav nav-vertical my-4 my-md-0">
-                <a href="/auctions.html" className="nav-link">
-                  Auctions
-                </a>
-                <a href="/collections.html" className="nav-link">
-                  Collections
-                </a>
-                <a href="/contacts.html" className="nav-link">
-                  Contact
-                </a>
-                <a href="/item.html" className="nav-link">
-                  Items
-                </a>
+                <Link href="/auctions">
+                  <a className="nav-link">Auctions</a>
+                </Link>
+
+                <Link href="/collections">
+                  <a className="nav-link">Collections</a>
+                </Link>
+
+                <Link href="/contacts">
+                  <a className="nav-link">Contact</a>
+                </Link>
+
+                <Link href="/item">
+                  <a className="nav-link">Items</a>
+                </Link>
               </nav>
             </div>
             <div className="col">

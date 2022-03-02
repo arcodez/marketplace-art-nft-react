@@ -29,7 +29,7 @@ export const ExplorePage = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Virtual Worlds</h5>
                 </a>
                 <p style={{ color: "white" }}>
@@ -62,7 +62,7 @@ export const ExplorePage = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Collectibles</h5>
                 </a>
                 <p style={{ color: "white" }}>
@@ -97,7 +97,7 @@ export const ExplorePage = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Arts</h5>
                 </a>
                 <p style={{ color: "white" }}>
@@ -132,7 +132,7 @@ export const ExplorePage = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Industrial Revolution</h5>
                 </a>
                 <p style={{ color: "white" }}>
@@ -165,7 +165,7 @@ export const ExplorePage = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Penguins</h5>
                 </a>
                 <p style={{ color: "white" }}>
@@ -200,7 +200,7 @@ export const ExplorePage = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Cartoon Heroes</h5>
                 </a>
                 <p style={{ color: "white" }}>
@@ -233,7 +233,7 @@ export const ExplorePage = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Gaming Chair</h5>
                 </a>
                 <p style={{ color: "white" }}>
@@ -266,7 +266,7 @@ export const ExplorePage = () => {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Walking On Air</h5>
                 </a>
                 <p style={{ color: "white" }}>

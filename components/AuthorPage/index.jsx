@@ -145,7 +145,7 @@ export const AuthorPage = () => {
                         alt="Card image cap"
                       />
                       <div className="card-body">
-                        <a href="https://edeline.ru/nft-demo/item.html">
+                        <a href="/item">
                           <h5 className="card-title">Virtual Worlds</h5>
                         </a>
                         <div className="avatar">
@@ -172,7 +172,7 @@ export const AuthorPage = () => {
                         alt="Card image cap"
                       />
                       <div className="card-body">
-                        <a href="https://edeline.ru/nft-demo/item.html">
+                        <a href="/item">
                           <h5 className="card-title">Collectibles</h5>
                         </a>
                         <div className="avatar">
@@ -199,7 +199,7 @@ export const AuthorPage = () => {
                         alt="Card image cap"
                       />
                       <div className="card-body">
-                        <a href="https://edeline.ru/nft-demo/item.html">
+                        <a href="/item">
                           <h5 className="card-title">Arts</h5>
                         </a>
                         <div className="avatar">
@@ -226,7 +226,7 @@ export const AuthorPage = () => {
                         alt="Card image cap"
                       />
                       <div className="card-body">
-                        <a href="https://edeline.ru/nft-demo/item.html">
+                        <a href="/item">
                           <h5 className="card-title">Robotix</h5>
                         </a>
                         <div className="avatar">
@@ -270,7 +270,7 @@ export const AuthorPage = () => {
                 src="https://edeline.ru/nft-demo/assets/img/coll/1.png"
                 alt="Card image cap"
               />
-              <a href="https://edeline.ru/nft-demo/item.html">
+              <a href="/item">
                 <h5 className="card-title">Digital Arts</h5>
               </a>
               <p className="b-t-l">ERC-498</p>
@@ -284,7 +284,7 @@ export const AuthorPage = () => {
                 src="https://edeline.ru/nft-demo/assets/img/coll/2.jpg"
                 alt="Card image cap"
               />
-              <a href="https://edeline.ru/nft-demo/item.html">
+              <a href="/item">
                 <h5 className="card-title">Sports</h5>
               </a>
               <p className="b-t-l">ERC-278</p>
@@ -298,7 +298,7 @@ export const AuthorPage = () => {
                 src="https://edeline.ru/nft-demo/assets/img/coll/3.jpg"
                 alt="Card image cap"
               />
-              <a href="https://edeline.ru/nft-demo/item.html">
+              <a href="/item">
                 <h5 className="card-title">Photography</h5>
               </a>
               <p className="b-t-l">ERC-745</p>
@@ -312,7 +312,7 @@ export const AuthorPage = () => {
                 src="https://edeline.ru/nft-demo/assets/img/coll/4.jpg"
                 alt="Card image cap"
               />
-              <a href="https://edeline.ru/nft-demo/item.html">
+              <a href="/item">
                 <h5 className="card-title">Tranding Cards</h5>
               </a>
               <p className="b-t-l">ERC-654</p>
@@ -331,7 +331,7 @@ export const AuthorPage = () => {
                 src="https://edeline.ru/nft-demo/assets/img/coll/5.jpg"
                 alt="Card image cap"
               />
-              <a href="https://edeline.ru/nft-demo/item.html">
+              <a href="/item">
                 <h5 className="card-title">Virtual World</h5>
               </a>
               <p className="b-t-l">ERC-453</p>
@@ -345,7 +345,7 @@ export const AuthorPage = () => {
                 src="https://edeline.ru/nft-demo/assets/img/coll/6.jpg"
                 alt="Card image cap"
               />
-              <a href="https://edeline.ru/nft-demo/item.html">
+              <a href="/item">
                 <h5 className="card-title">Collectibles</h5>
               </a>
               <p className="b-t-l">ERC-234</p>
@@ -359,7 +359,7 @@ export const AuthorPage = () => {
                 src="https://edeline.ru/nft-demo/assets/img/coll/7.jpg"
                 alt="Card image cap"
               />
-              <a href="https://edeline.ru/nft-demo/item.html">
+              <a href="/item">
                 <h5 className="card-title">UX/UI</h5>
               </a>
               <p className="b-t-l">ERC-457</p>
@@ -373,7 +373,7 @@ export const AuthorPage = () => {
                 src="https://edeline.ru/nft-demo/assets/img/coll/8.jpg"
                 alt="Card image cap"
               />
-              <a href="https://edeline.ru/nft-demo/item.html">
+              <a href="/item">
                 <h5 className="card-title">Flowers</h5>
               </a>
               <p className="b-t-l">ERC-876</p>

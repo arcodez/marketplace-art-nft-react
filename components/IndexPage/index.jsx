@@ -53,7 +53,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Virtual Worlds</h5>
                 </a>
                 <div className="avatar">
@@ -80,7 +80,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Collectibles</h5>
                 </a>
                 <div className="avatar">
@@ -107,7 +107,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Arts</h5>
                 </a>
                 <div className="avatar">
@@ -134,7 +134,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Robotix</h5>
                 </a>
                 <div className="avatar">
@@ -161,7 +161,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">New Year Penguin</h5>
                 </a>
                 <div className="avatar">
@@ -188,7 +188,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Fast Food Penguin</h5>
                 </a>
                 <div className="avatar">
@@ -215,7 +215,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Pirat Penguin</h5>
                 </a>
                 <div className="avatar">
@@ -242,7 +242,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
               <div className="card-body">
-                <a href="https://edeline.ru/nft-demo/item.html">
+                <a href="/item">
                   <h5 className="card-title">Brazil Penguin</h5>
                 </a>
                 <div className="avatar">
@@ -387,7 +387,7 @@ export function IndexPage() {
               src="https://edeline.ru/nft-demo/assets/img/coll/1.png"
               alt="Card image cap"
             />
-            <a href="https://edeline.ru/nft-demo/item.html">
+            <a href="/item">
               <h5 className="card-title">Digital Arts</h5>
             </a>
             <p className="b-t-l">ERC-498</p>
