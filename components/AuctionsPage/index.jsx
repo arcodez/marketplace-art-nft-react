@@ -1,9 +1,14 @@
+import Head from "next/head";
 import React from "react";
 import { Layout } from "../Layout";
 
 const AuctionsPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Auctions</title>
+      </Head>
+      
       <div className="pages-header" />
       <div className="pages-title">
         <h2>Auctions</h2>

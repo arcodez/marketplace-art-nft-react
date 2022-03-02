@@ -1,8 +1,12 @@
+import Head from "next/head";
 import { Layout } from "../Layout";
 
 export function IndexPage() {
   return (
     <Layout>
+      <Head>
+        <title>Art Nft Web</title>
+      </Head>
       <div className="hero-image">
         <h1>
           <b>
@@ -19,11 +23,11 @@ export function IndexPage() {
             Explore on the world's best &amp; largest NFT marketplace
             <br />
             <br />
-            <a href="https://edeline.ru/nft-demo/explore.html">
+            <a href="/explore">
               <i className="fas fa-rocket" aria-hidden="true" /> Explore
             </a>
             <a
-              href="https://edeline.ru/nft-demo/create.html"
+              href="/create"
               style={{ marginLeft: "10px" }}
             >
               <i className="far fa-edit" aria-hidden="true" /> Create
@@ -63,7 +67,7 @@ export function IndexPage() {
                   />
                 </div>
                 <a
-                  href="https://edeline.ru/nft-demo/author.html"
+                  href="/author"
                   className="avatar-text"
                 >
                   @John Doe
@@ -90,7 +94,7 @@ export function IndexPage() {
                   />
                 </div>
                 <a
-                  href="https://edeline.ru/nft-demo/author.html"
+                  href="/author"
                   className="avatar-text"
                 >
                   @Gabriel
@@ -117,7 +121,7 @@ export function IndexPage() {
                   />
                 </div>
                 <a
-                  href="https://edeline.ru/nft-demo/author.html"
+                  href="/author"
                   className="avatar-text"
                 >
                   @Mike
@@ -144,7 +148,7 @@ export function IndexPage() {
                   />
                 </div>
                 <a
-                  href="https://edeline.ru/nft-demo/author.html"
+                  href="/author"
                   className="avatar-text"
                 >
                   @Sarah
@@ -171,7 +175,7 @@ export function IndexPage() {
                   />
                 </div>
                 <a
-                  href="https://edeline.ru/nft-demo/author.html"
+                  href="/author"
                   className="avatar-text"
                 >
                   @Sarah
@@ -198,7 +202,7 @@ export function IndexPage() {
                   />
                 </div>
                 <a
-                  href="https://edeline.ru/nft-demo/author.html"
+                  href="/author"
                   className="avatar-text"
                 >
                   @Mike
@@ -225,7 +229,7 @@ export function IndexPage() {
                   />
                 </div>
                 <a
-                  href="https://edeline.ru/nft-demo/author.html"
+                  href="/author"
                   className="avatar-text"
                 >
                   @Marina
@@ -252,7 +256,7 @@ export function IndexPage() {
                   />
                 </div>
                 <a
-                  href="https://edeline.ru/nft-demo/author.html"
+                  href="/author"
                   className="avatar-text"
                 >
                   @Georgia
@@ -276,7 +280,7 @@ export function IndexPage() {
       <div className="sec-1" style={{ marginTop: "-30px" }}>
         <div className="card col-sm-4">
           <div className="card-body">
-            <a href="https://edeline.ru/nft-demo/author.html">
+            <a href="/author">
               <h5 className="card-title">Georgia Miller</h5>
             </a>
             <div className="avatar">
@@ -286,7 +290,7 @@ export function IndexPage() {
               />
             </div>
             <a
-              href="https://edeline.ru/nft-demo/author.html"
+              href="/author"
               className="avatar-text"
             >
               @Georgia
@@ -298,7 +302,7 @@ export function IndexPage() {
         </div>
         <div className="card col-sm-4">
           <div className="card-body">
-            <a href="https://edeline.ru/nft-demo/author.html">
+            <a href="/author">
               <h5 className="card-title">John Doe</h5>
             </a>
             <div className="avatar">
@@ -308,7 +312,7 @@ export function IndexPage() {
               />
             </div>
             <a
-              href="https://edeline.ru/nft-demo/author.html"
+              href="/author"
               className="avatar-text"
             >
               @John Doe
@@ -320,7 +324,7 @@ export function IndexPage() {
         </div>
         <div className="card col-sm-4">
           <div className="card-body">
-            <a href="https://edeline.ru/nft-demo/author.html">
+            <a href="/author">
               <h5 className="card-title">Martin Later</h5>
             </a>
             <div className="avatar">
@@ -330,7 +334,7 @@ export function IndexPage() {
               />
             </div>
             <a
-              href="https://edeline.ru/nft-demo/author.html"
+              href="/author"
               className="avatar-text"
             >
               @Martin
@@ -342,7 +346,7 @@ export function IndexPage() {
         </div>
         <div className="card col-sm-4">
           <div className="card-body">
-            <a href="https://edeline.ru/nft-demo/author.html">
+            <a href="/author">
               <h5 className="card-title">Sarah Parker</h5>
             </a>
             <div className="avatar">
@@ -352,7 +356,7 @@ export function IndexPage() {
               />
             </div>
             <a
-              href="https://edeline.ru/nft-demo/author.html"
+              href="/author"
               className="avatar-text"
             >
               @Sarah

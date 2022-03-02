@@ -2,8 +2,11 @@ import React from "react";
 import { Layout } from "../Layout";
 
 export const CreatePage = () => {
-  return ( 
+  return (
     <Layout>
+      <Head>
+        <title>Create Item</title>
+      </Head>
       <div className="pages-header" />
       <div className="pages-title">
         <h2>Create item</h2>
@@ -240,4 +243,3 @@ export const CreatePage = () => {
     </Layout>
   );
 };
-

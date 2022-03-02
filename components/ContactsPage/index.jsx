@@ -1,8 +1,13 @@
+import Head from "next/head";
 import { Layout } from "../Layout";
 
 export const ContactsPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Contacts</title>
+      </Head>
+
       <div className="pages-header" />
       <div className="pages-title">
         <h2>Contacts</h2>
@@ -86,7 +91,7 @@ export const ContactsPage = () => {
           </form>
         </div>
       </div>
-      <style jsx >{`
+      <style jsx>{`
         /*! CSS Used from: https://edeline.ru/nft-demo/css/style.css ; media=all */
         @media all {
           *,

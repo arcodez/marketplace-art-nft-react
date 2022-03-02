@@ -1,14 +1,18 @@
+import Head from "next/head";
 import React from "react";
 import { Layout } from "../Layout";
 
 const author = {
   nombre: "Abel Rodriguez",
-  profile_img: "https://avatars.githubusercontent.com/u/69878476?v=4"
-}
+  profile_img: "https://avatars.githubusercontent.com/u/69878476?v=4",
+};
 
 export const AuthorPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Author | Arcodez </title>
+      </Head>
       <div>
         <div className="pages-header" />
         <div className="pages-title">
@@ -16,7 +20,8 @@ export const AuthorPage = () => {
           <br />
           <b>
             <a href="https://edeline.ru/nft-demo/author.html">Authors</a>
-            <i className="fas fa-chevron-right" aria-hidden="true" /> {author.nombre} 
+            <i className="fas fa-chevron-right" aria-hidden="true" />{" "}
+            {author.nombre}
           </b>
         </div>
         <div className="container">

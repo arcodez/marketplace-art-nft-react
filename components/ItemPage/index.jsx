@@ -4,6 +4,11 @@ import { Layout } from '../Layout'
 const ItemPage = () => {
     return (
         <Layout>
+          <Head>
+            <title>
+              Item 
+            </title>
+          </Head>
         <div className="pages-header" />
         <div className="pages-title">
           <h2>Item Details</h2>

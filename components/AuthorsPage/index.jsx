@@ -3,6 +3,9 @@ import { Layout } from "../Layout";
 export const AuthorsPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Authors</title>
+      </Head>
       <div className="pages-header" />
       <div className="pages-title">
         <h2>Authors</h2>

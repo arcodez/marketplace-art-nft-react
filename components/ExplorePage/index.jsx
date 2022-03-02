@@ -1,8 +1,13 @@
+import Head from "next/head";
 import { Layout } from "../Layout";
 
 export const ExplorePage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Explore</title>
+      </Head>
+
       <div className="pages-header" />
       <div className="pages-title">
         <h2>Explore</h2>

@@ -30,25 +30,25 @@ const collectionsCards = [
   {
     imgUrl: "https://edeline.ru/nft-demo/assets/img/coll/5.jpg",
     title: "Virtual World",
-    price: 264.20,
+    price: 264.2,
     coin: "ERC-453",
   },
   {
     imgUrl: "https://edeline.ru/nft-demo/assets/img/coll/6.jpg",
     title: "Collectibles",
-    price: 124.20,
+    price: 124.2,
     coin: "ERC-234",
   },
   {
     imgUrl: "https://edeline.ru/nft-demo/assets/img/coll/7.jpg",
     title: "UX/UI",
-    price: 134.200,
+    price: 134.2,
     coin: "ERC-457",
   },
   {
     imgUrl: "https://edeline.ru/nft-demo/assets/img/coll/8.jpg",
     title: "Flowers",
-    price: 343.20,
+    price: 343.2,
     coin: "ERC-876",
   },
   ,
@@ -80,6 +80,9 @@ const CardItem = ({
 export const CollectionsPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Collections Art</title>
+      </Head>
       <div className="pages-header" />
       <div className="pages-title">
         <h2>Collections</h2>
