@@ -15,7 +15,8 @@ export const Navbar = () => {
           <div className="container">
             <a className="navbar-brand" href="/">
               <img
-                src="https://edeline.ru/nft-demo/assets/img/logo.png"
+                src="/logo_abel.png"
+                // src="https://edeline.ru/nft-demo/assets/img/logo.png"
                 alt="logo"
                 width={70}
               />
