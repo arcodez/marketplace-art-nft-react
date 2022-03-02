@@ -1,15 +1,20 @@
+import Head from "next/head";
+import Link from "next/link";
 import React from "react";
 import { Layout } from "../Layout";
 
 const WalletPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>Wallet Connect</title>
+      </Head>
       <div className="pages-header" />
       <div className="pages-title">
         <h2>Wallet Connect</h2>
         <br />
         <b>
-          <a href="https://edeline.ru/nft-demo/">Home</a>
+          <a href="/">Home</a>
           <i className="fas fa-chevron-right" aria-hidden="true" /> Wallet
           Connect
         </b>
@@ -34,10 +39,7 @@ const WalletPage = () => {
             <div className="col-12 col-md-6 col-lg-4 item">
               {/* Single Wallet */}
               <div className="card single-wallet">
-                <a
-                  className="d-block text-center"
-                  href="https://edeline.ru/nft-demo/login.html"
-                >
+                <a className="d-block text-center" href="/login">
                   <img
                     className="avatar-lg"
                     src="https://edeline.ru/nft-demo/assets/img/wallet/metamask.png"
@@ -56,87 +58,83 @@ const WalletPage = () => {
             <div className="col-12 col-md-6 col-lg-4 item">
               {/* Single Wallet */}
               <div className="card single-wallet">
-                <a
-                  className="d-block text-center"
-                  href="https://edeline.ru/nft-demo/login.html"
-                >
-                  <img
-                    className="avatar-lg"
-                    src="https://edeline.ru/nft-demo/assets/img/wallet/authereum.png"
-                    alt=""
-                  />
-                  <h4 className="mb-0">Authereum</h4>
-                  <p>
-                    A user-friendly wallet that allows you to sign up with your
-                    phone number on any device
-                  </p>
-                </a>
+                <Link href="/login">
+                  <a className="d-block text-center">
+                    <img
+                      className="avatar-lg"
+                      src="https://edeline.ru/nft-demo/assets/img/wallet/authereum.png"
+                      alt=""
+                    />
+                    <h4 className="mb-0">Authereum</h4>
+                    <p>
+                      A user-friendly wallet that allows you to sign up with
+                      your phone number on any device
+                    </p>
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 item">
               {/* Single Wallet */}
               <div className="card single-wallet">
-                <a
-                  className="d-block text-center"
-                  href="https://edeline.ru/nft-demo/login.html"
-                >
-                  <img
-                    className="avatar-lg"
-                    src="https://edeline.ru/nft-demo/assets/img/wallet/walletconnect.png"
-                    alt=""
-                  />
-                  <h4 className="mb-0">WalletConnect</h4>
-                  <p>
-                    Pair with Trust, Argent, MetaMask &amp; more. Works from any
-                    browser, without an extension
-                  </p>
-                </a>
+                <Link href="/login">
+                  <a className="d-block text-center">
+                    <img
+                      className="avatar-lg"
+                      src="https://edeline.ru/nft-demo/assets/img/wallet/walletconnect.png"
+                      alt=""
+                    />
+                    <h4 className="mb-0">WalletConnect</h4>
+                    <p>
+                      Pair with Trust, Argent, MetaMask &amp; more. Works from
+                      any browser, without an extension
+                    </p>
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 item">
               {/* Single Wallet */}
               <div className="card single-wallet">
-                <a
-                  className="d-block text-center"
-                  href="https://edeline.ru/nft-demo/login.html"
-                >
-                  <img
-                    className="avatar-lg"
-                    src="https://edeline.ru/nft-demo/assets/img/wallet/dapper.png"
-                    alt=""
-                  />
-                  <h4 className="mb-0">Dapper</h4>
-                  <p>
-                    A security-focused cloud wallet with pin codes and
-                    multi-factor authentication
-                  </p>
-                </a>
+                <Link href="/login">
+                  <a className="d-block text-center">
+                    <img
+                      className="avatar-lg"
+                      src="https://edeline.ru/nft-demo/assets/img/wallet/dapper.png"
+                      alt=""
+                    />
+                    <h4 className="mb-0">Dapper</h4>
+                    <p>
+                      A security-focused cloud wallet with pin codes and
+                      multi-factor authentication
+                    </p>
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 item">
               {/* Single Wallet */}
               <div className="card single-wallet">
-                <a
-                  className="d-block text-center"
-                  href="https://edeline.ru/nft-demo/login.html"
-                >
-                  <img
-                    className="avatar-lg"
-                    src="https://edeline.ru/nft-demo/assets/img/wallet/kaikas.png"
-                    alt=""
-                  />
-                  <h4 className="mb-0">Kaikas</h4>
-                  <p>
-                    A simple-to-use wallet that works on both mobile and through
-                    a browser extension
-                  </p>
-                </a>
+                <Link href="/login">
+                  <a className="d-block text-center">
+                    <img
+                      className="avatar-lg"
+                      src="https://edeline.ru/nft-demo/assets/img/wallet/kaikas.png"
+                      alt=""
+                    />
+                    <h4 className="mb-0">Kaikas</h4>
+                    <p>
+                      A simple-to-use wallet that works on both mobile and
+                      through a browser extension
+                    </p>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+
       <style jsx global>{`
         /*! CSS Used from: https://edeline.ru/nft-demo/css/style.css ; media=all */
         @media all {

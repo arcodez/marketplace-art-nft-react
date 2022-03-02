@@ -1,9 +1,15 @@
+import Head from "next/head";
 import React from "react";
 import { Layout } from "../Layout";
 
 const LoginPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          Login || Sing Up 
+        </title>
+      </Head>
       <div className="pages-header" />
       <div className="pages-title">
         <h2>Login</h2>

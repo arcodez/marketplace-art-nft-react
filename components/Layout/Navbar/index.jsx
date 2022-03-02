@@ -13,7 +13,7 @@ export const Navbar = () => {
       <header className="lead-demo menu-fix" style={{ zIndex: 9999999999 }}>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container">
-            <a className="navbar-brand" href="https://edeline.ru/nft-demo/">
+            <a className="navbar-brand" href="/">
               <img
                 src="https://edeline.ru/nft-demo/assets/img/logo.png"
                 alt="logo"
