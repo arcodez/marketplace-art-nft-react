@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { Layout } from "../Layout";
 
-const author = {
+export const author = {
   nombre: "Abel Rodriguez",
   profile_img: "https://avatars.githubusercontent.com/u/69878476?v=4",
 };
@@ -155,7 +155,7 @@ export const AuthorPage = () => {
                         </a>
                         <div className="avatar">
                           <img
-                            src="https://edeline.ru/nft-demo/assets/img/users/avatar_4.jpg"
+                            src={author.profile_img}
                             alt="Card image cap"
                           />
                         </div>
@@ -182,7 +182,7 @@ export const AuthorPage = () => {
                         </a>
                         <div className="avatar">
                           <img
-                            src="https://edeline.ru/nft-demo/assets/img/users/avatar_4.jpg"
+                            src={author.profile_img}
                             alt="Card image cap"
                           />
                         </div>
@@ -209,7 +209,7 @@ export const AuthorPage = () => {
                         </a>
                         <div className="avatar">
                           <img
-                            src="https://edeline.ru/nft-demo/assets/img/users/avatar_4.jpg"
+                            src={author.profile_img}
                             alt="Card image cap"
                           />
                         </div>
@@ -236,7 +236,7 @@ export const AuthorPage = () => {
                         </a>
                         <div className="avatar">
                           <img
-                            src="https://edeline.ru/nft-demo/assets/img/users/avatar_4.jpg"
+                            src={author.profile_img}
                             alt="Card image cap"
                           />
                         </div>

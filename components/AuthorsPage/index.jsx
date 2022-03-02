@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { author } from "../AuthorPage";
 import { Layout } from "../Layout";
 
 export const AuthorsPage = () => {
@@ -34,10 +35,7 @@ export const AuthorsPage = () => {
               />
               <div className="card-body">
                 <div className="avatar-a">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_1.jpg"
-                    alt="Card image cap"
-                  />
+                  <img src={author.profile_img} alt="Card image cap" />
                 </div>
                 <div className="a-det">
                   <a href="https://edeline.ru/nft-demo/author.html">
@@ -184,10 +182,7 @@ export const AuthorsPage = () => {
               />
               <div className="card-body">
                 <div className="avatar-a">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_1.jpg"
-                    alt="Card image cap"
-                  />
+                  <img src={author.profile_img} alt="Card image cap" />
                 </div>
                 <div className="a-det">
                   <a href="https://edeline.ru/nft-demo/author.html">

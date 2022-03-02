@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import { author } from "../AuthorPage";
 import { Layout } from "../Layout";
 
 export const CreatePage = () => {
@@ -28,7 +29,7 @@ export const CreatePage = () => {
               {/* SIDEBAR USERPIC */}
               <div className="profile-userpic">
                 <img
-                  src="https://edeline.ru/nft-demo/assets/img/users/avatar_4.jpg"
+                  src={author.profile_img}
                   className="img-responsive pavatar"
                   alt="user"
                 />
@@ -36,7 +37,7 @@ export const CreatePage = () => {
               {/* END SIDEBAR USERPIC */}
               {/* SIDEBAR USER TITLE */}
               <div className="profile-usertitle">
-                <div className="profile-usertitle-name">Marcus Doe</div>
+                <div className="profile-usertitle-name">{author.nombre}</div>
                 <div className="profile-usertitle-job">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </div>
