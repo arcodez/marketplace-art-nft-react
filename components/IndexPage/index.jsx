@@ -1,274 +1,192 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Layout } from "../Layout";
 
-export function IndexPage() {
+const HeroImage = () => {
   return (
-    <Layout>
-      <Head>
-        <title>Art Nft Web</title>
-      </Head>
-      <div className="hero-image">
-        <h1>
-          <b>
-            - Welcome to KTX-NFT!
-            <br />
-          </b>
-          Discover, collect,
+    <div className="hero-image">
+      <h1>
+        <b>
+          - Welcome to Arcodez Art Nft!
           <br />
-          and sell
+        </b>
+        Discover, collect,
+        <br />
+        and sell
+        <br />
+        extraordinary NFTs
+        <br />
+        <label>
+          Explore on the world's best &amp; largest NFT marketplace
           <br />
-          extraordinary NFTs
           <br />
-          <label>
-            Explore on the world's best &amp; largest NFT marketplace
-            <br />
-            <br />
-            <a href="/explore">
+          <Link href="/explore">
+            <a>
               <i className="fas fa-rocket" aria-hidden="true" /> Explore
             </a>
-            <a
-              href="/create"
-              style={{ marginLeft: "10px" }}
-            >
+          </Link>
+          <Link href="/create">
+            <a style={{ marginLeft: "10px" }}>
               <i className="far fa-edit" aria-hidden="true" /> Create
             </a>
-          </label>
-        </h1>
+          </Link>
+        </label>
+      </h1>
+    </div>
+  );
+};
+
+const LivesCards = [
+  {
+    imgUrl: "https://edeline.ru/nft-demo/assets/img/coll/1.png",
+    avatarImgUrl: "https://edeline.ru/nft-demo/assets/img/users/avatar_1.jpg",
+    authorName: "John Doe",
+    title: "Digital Arts",
+    price: 2.3,
+    coin: "BNB",
+    quantity: 1,
+    stock: 1,
+  },
+  {
+    imgUrl: "https://edeline.ru/nft-demo/assets/img/cards/auction_2.jpg",
+    avatarImgUrl: "https://edeline.ru/nft-demo/assets/img/users/avatar_4.jpg",
+    authorName: "Gabriel",
+    title: "Collectibles",
+    price: 1.3,
+    coin: "BNB",
+    quantity: 1,
+    stock: 1,
+  },
+  {
+    imgUrl: "https://edeline.ru/nft-demo/assets/img/cards/auction_3.jpg",
+    avatarImgUrl: "https://edeline.ru/nft-demo/assets/img/users/avatar_3.jpg",
+    authorName: "Mike",
+    title: "Arts",
+    price: 1.7,
+    coin: "BNB",
+    quantity: 1,
+    stock: 1,
+  },
+  {
+    imgUrl: "https://edeline.ru/nft-demo/assets/img/cards/auction_4.jpg",
+    avatarImgUrl: "https://edeline.ru/nft-demo/assets/img/users/avatar_2.jpg",
+    authorName: "Sarah",
+    title: "Robotix",
+    price: 2.8,
+    coin: "BNB",
+    quantity: 1,
+    stock: 1,
+  },
+  {
+    imgUrl: "https://edeline.ru/nft-demo/assets/img/cards/5.jpg",
+    avatarImgUrl: "https://edeline.ru/nft-demo/assets/img/users/avatar_2.jpg",
+    authorName: "Sarah",
+    title: "New Year Penguin",
+    price: 2.3,
+    coin: "BNB",
+    quantity: 1,
+    stock: 1,
+  },
+  {
+    imgUrl: "https://edeline.ru/nft-demo/assets/img/cards/6.png",
+    avatarImgUrl: "https://edeline.ru/nft-demo/assets/img/users/avatar_3.jpg",
+    authorName: "Mike",
+    title: "Fast Food Penguin",
+    price: 1.3,
+    coin: "BNB",
+    quantity: 1,
+    stock: 1,
+  },
+  {
+    imgUrl: "https://edeline.ru/nft-demo/assets/img/cards/7.png",
+    avatarImgUrl: "https://edeline.ru/nft-demo/assets/img/users/avatar_5.jpg",
+    authorName: "Marina",
+    title: "Pirat Penguin",
+    price: 1.7,
+    coin: "BNB",
+    quantity: 1,
+    stock: 1,
+  },
+  {
+    imgUrl: "https://edeline.ru/nft-demo/assets/img/cards/8.png",
+    avatarImgUrl: "https://edeline.ru/nft-demo/assets/img/users/avatar_6.jpg",
+    authorName: "Georgia",
+    title: "Brazil Penguin",
+    price: 2.8,
+    coin: "BNB",
+    quantity: 1,
+    stock: 1,
+  },
+];
+
+const LiveCard = ({
+  imgUrl = "https://edeline.ru/nft-demo/assets/img/coll/1.png",
+  avatarImgUrl = "https://edeline.ru/nft-demo/assets/img/users/avatar_1.jpg",
+  authorName = "John Doe",
+  title = "Digital Arts",
+  price = 2.3,
+  coin = "BNB",
+  quantity = 1,
+  stock = 1,
+}) => {
+  return (
+    <div className="card col-sm-4">
+      <img className="card-img-top" src={imgUrl} alt={title} />
+      <div className="card-body">
+        <Link href="/item">
+          <a>
+            <h5 className="card-title">Virtual Worlds</h5>
+          </a>
+        </Link>
+
+        <div className="avatar">
+          <img src={avatarImgUrl} alt="Card image cap" />
+        </div>
+
+        <Link href="/author">
+          <a className="avatar-text">@{authorName}</a>
+        </Link>
+        <br />
+        
+        <p className="b-t-l">
+          {price} {coin}
+        </p>
+        <p className="b-t-r">
+          {quantity} of {stock}
+        </p>
       </div>
-      <div className="container">
-        <div className="row">
-          <div className="sec-t">
-            <b>- Auctions</b>
-            <h2>Live Auctions</h2>
-            <br />
-            <a
-              href="https://edeline.ru/nft-demo/auctions.html"
-              className="button-vl"
-            >
+    </div>
+  );
+};
+
+const LiveAuctionSection = () => {
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="sec-t">
+          <b>- Auctions</b>
+          <h2>Live Auctions</h2>
+          <br />
+          <Link href="/auctions">
+            <a className="button-vl">
               View All
               <i className="fas fa-long-arrow-alt-right" aria-hidden="true" />
             </a>
-          </div>
-          <div className="sec-1">
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/auction_1.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item">
-                  <h5 className="card-title">Virtual Worlds</h5>
-                </a>
-                <div className="avatar">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_1.jpg"
-                    alt="Card image cap"
-                  />
-                </div>
-                <a
-                  href="/author"
-                  className="avatar-text"
-                >
-                  @John Doe
-                </a>
-                <br />
-                <p className="b-t-l">2.3 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/auction_2.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item">
-                  <h5 className="card-title">Collectibles</h5>
-                </a>
-                <div className="avatar">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_4.jpg"
-                    alt="Card image cap"
-                  />
-                </div>
-                <a
-                  href="/author"
-                  className="avatar-text"
-                >
-                  @Gabriel
-                </a>
-                <br />
-                <p className="b-t-l">1.3 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/auction_3.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item">
-                  <h5 className="card-title">Arts</h5>
-                </a>
-                <div className="avatar">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_3.jpg"
-                    alt="Card image cap"
-                  />
-                </div>
-                <a
-                  href="/author"
-                  className="avatar-text"
-                >
-                  @Mike
-                </a>
-                <br />
-                <p className="b-t-l">1.7 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/auction_4.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item">
-                  <h5 className="card-title">Robotix</h5>
-                </a>
-                <div className="avatar">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_2.jpg"
-                    alt="Card image cap"
-                  />
-                </div>
-                <a
-                  href="/author"
-                  className="avatar-text"
-                >
-                  @Sarah
-                </a>
-                <br />
-                <p className="b-t-l">2.8 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/5.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item">
-                  <h5 className="card-title">New Year Penguin</h5>
-                </a>
-                <div className="avatar">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_2.jpg"
-                    alt="Card image cap"
-                  />
-                </div>
-                <a
-                  href="/author"
-                  className="avatar-text"
-                >
-                  @Sarah
-                </a>
-                <br />
-                <p className="b-t-l">2.3 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/6.png"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item">
-                  <h5 className="card-title">Fast Food Penguin</h5>
-                </a>
-                <div className="avatar">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_3.jpg"
-                    alt="Card image cap"
-                  />
-                </div>
-                <a
-                  href="/author"
-                  className="avatar-text"
-                >
-                  @Mike
-                </a>
-                <br />
-                <p className="b-t-l">1.3 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/7.png"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item">
-                  <h5 className="card-title">Pirat Penguin</h5>
-                </a>
-                <div className="avatar">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_5.jpg"
-                    alt="Card image cap"
-                  />
-                </div>
-                <a
-                  href="/author"
-                  className="avatar-text"
-                >
-                  @Marina
-                </a>
-                <br />
-                <p className="b-t-l">1.7 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/8.png"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item">
-                  <h5 className="card-title">Brazil Penguin</h5>
-                </a>
-                <div className="avatar">
-                  <img
-                    src="https://edeline.ru/nft-demo/assets/img/users/avatar_6.jpg"
-                    alt="Card image cap"
-                  />
-                </div>
-                <a
-                  href="/author"
-                  className="avatar-text"
-                >
-                  @Georgia
-                </a>
-                <br />
-                <p className="b-t-l">2.8 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-              </div>
-            </div>
-          </div>
+          </Link>
+        </div>
+        <div className="sec-1">
+          {LivesCards.map((card, index) => (
+            <LiveCard key={index} {...card} />
+          ))}
         </div>
       </div>
+    </div>
+  );
+};
+
+const SellerSection = () => {
+  return (
+    <>
       <div className="container">
         <div className="row">
           <div className="sec-t">
@@ -289,10 +207,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
             </div>
-            <a
-              href="/author"
-              className="avatar-text"
-            >
+            <a href="/author" className="avatar-text">
               @Georgia
             </a>
             <br />
@@ -311,10 +226,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
             </div>
-            <a
-              href="/author"
-              className="avatar-text"
-            >
+            <a href="/author" className="avatar-text">
               @John Doe
             </a>
             <br />
@@ -333,10 +245,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
             </div>
-            <a
-              href="/author"
-              className="avatar-text"
-            >
+            <a href="/author" className="avatar-text">
               @Martin
             </a>
             <br />
@@ -355,10 +264,7 @@ export function IndexPage() {
                 alt="Card image cap"
               />
             </div>
-            <a
-              href="/author"
-              className="avatar-text"
-            >
+            <a href="/author" className="avatar-text">
               @Sarah
             </a>
             <br />
@@ -367,6 +273,144 @@ export function IndexPage() {
           </div>
         </div>
       </div>
+    </>
+  );
+};
+
+const ExploreSection = () => {
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="sec-t">
+          <b>- Exclusive Assets</b>
+          <h2>Explore</h2>
+        </div>
+        <div className="sec-1" style={{ marginTop: "-20px" }}>
+          <div className="card col-sm-4">
+            <img
+              className="card-img-top"
+              src="https://edeline.ru/nft-demo/assets/img/cards/auction_1.jpg"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <a href="/item.html">
+                <h5 className="card-title">Virtual Worlds</h5>
+              </a>
+              <p style={{ color: "white" }}>
+                Owned by <a href>@JohnDeo</a>
+              </p>
+              <p className="b-t-l">2.3 BNB</p>
+              <p className="b-t-r">1 of 1</p>
+              <br />
+              <br />
+              <a href="/login.html" className="button-vl">
+                <i
+                  className="fas fa-shopping-bag"
+                  style={{ fontSize: "13px" }}
+                  aria-hidden="true"
+                />
+                Place a Bid{" "}
+              </a>
+              <br />
+              <br />
+            </div>
+          </div>
+          <div className="card col-sm-4">
+            <img
+              className="card-img-top"
+              src="https://edeline.ru/nft-demo/assets/img/cards/auction_2.jpg"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <a href="/item.html">
+                <h5 className="card-title">Collectibles</h5>
+              </a>
+              <p style={{ color: "white" }}>
+                Owned by <a href>@SarahConor</a>
+              </p>
+              <p className="b-t-l">1.3 BNB</p>
+              <p className="b-t-r">1 of 1</p>
+              <br />
+              <br />
+              <a href="/login.html" className="button-vl">
+                <i
+                  className="fas fa-shopping-bag"
+                  style={{ fontSize: "13px" }}
+                  aria-hidden="true"
+                />
+                Place a Bid{" "}
+              </a>
+              <br />
+              <br />
+            </div>
+          </div>
+          <div className="card col-sm-4">
+            <img
+              className="card-img-top"
+              src="https://edeline.ru/nft-demo/assets/img/cards/auction_3.jpg"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <a href="/item.html">
+                <h5 className="card-title">Arts</h5>
+              </a>
+              <p style={{ color: "white" }}>
+                Owned by <a href>@GeorgiaMiller</a>
+              </p>
+              <p className="b-t-l">1.7 BNB</p>
+              <p className="b-t-r">1 of 1</p>
+              <br />
+              <br />
+              <a href="/login.html" className="button-vl">
+                <i
+                  className="fas fa-shopping-bag"
+                  style={{ fontSize: "13px" }}
+                  aria-hidden="true"
+                />
+                Place a Bid{" "}
+              </a>
+              <br />
+              <br />
+            </div>
+          </div>
+          <div className="card col-sm-4">
+            <img
+              className="card-img-top"
+              src="https://edeline.ru/nft-demo/assets/img/cards/auction_4.jpg"
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <a href="/item.html">
+                <h5 className="card-title">Industrial Revolution</h5>
+              </a>
+              <p style={{ color: "white" }}>
+                Owned by <a href>@JohnDoe</a>
+              </p>
+              <p className="b-t-l">2.8 BNB</p>
+              <p className="b-t-r">1 of 1</p>
+              <br />
+              <br />
+              <a href="/login.html" className="button-vl">
+                <i
+                  className="fas fa-shopping-bag"
+                  style={{ fontSize: "13px" }}
+                  aria-hidden="true"
+                />
+                Place a Bid{" "}
+              </a>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const CollectionSection = () => {
+  return (
+    <>
       <div className="container">
         <div className="row">
           <div className="sec-t">
@@ -499,132 +543,13 @@ export function IndexPage() {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="row">
-          <div className="sec-t">
-            <b>- Exclusive Assets</b>
-            <h2>Explore</h2>
-          </div>
-          <div className="sec-1" style={{ marginTop: "-20px" }}>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/auction_1.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item.html">
-                  <h5 className="card-title">Virtual Worlds</h5>
-                </a>
-                <p style={{ color: "white" }}>
-                  Owned by <a href>@JohnDeo</a>
-                </p>
-                <p className="b-t-l">2.3 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-                <br />
-                <br />
-                <a href="/login.html" className="button-vl">
-                  <i
-                    className="fas fa-shopping-bag"
-                    style={{ fontSize: "13px" }}
-                    aria-hidden="true"
-                  />
-                  Place a Bid{" "}
-                </a>
-                <br />
-                <br />
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/auction_2.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item.html">
-                  <h5 className="card-title">Collectibles</h5>
-                </a>
-                <p style={{ color: "white" }}>
-                  Owned by <a href>@SarahConor</a>
-                </p>
-                <p className="b-t-l">1.3 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-                <br />
-                <br />
-                <a href="/login.html" className="button-vl">
-                  <i
-                    className="fas fa-shopping-bag"
-                    style={{ fontSize: "13px" }}
-                    aria-hidden="true"
-                  />
-                  Place a Bid{" "}
-                </a>
-                <br />
-                <br />
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/auction_3.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item.html">
-                  <h5 className="card-title">Arts</h5>
-                </a>
-                <p style={{ color: "white" }}>
-                  Owned by <a href>@GeorgiaMiller</a>
-                </p>
-                <p className="b-t-l">1.7 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-                <br />
-                <br />
-                <a href="/login.html" className="button-vl">
-                  <i
-                    className="fas fa-shopping-bag"
-                    style={{ fontSize: "13px" }}
-                    aria-hidden="true"
-                  />
-                  Place a Bid{" "}
-                </a>
-                <br />
-                <br />
-              </div>
-            </div>
-            <div className="card col-sm-4">
-              <img
-                className="card-img-top"
-                src="https://edeline.ru/nft-demo/assets/img/cards/auction_4.jpg"
-                alt="Card image cap"
-              />
-              <div className="card-body">
-                <a href="/item.html">
-                  <h5 className="card-title">Industrial Revolution</h5>
-                </a>
-                <p style={{ color: "white" }}>
-                  Owned by <a href>@JohnDoe</a>
-                </p>
-                <p className="b-t-l">2.8 BNB</p>
-                <p className="b-t-r">1 of 1</p>
-                <br />
-                <br />
-                <a href="/login.html" className="button-vl">
-                  <i
-                    className="fas fa-shopping-bag"
-                    style={{ fontSize: "13px" }}
-                    aria-hidden="true"
-                  />
-                  Place a Bid{" "}
-                </a>
-                <br />
-                <br />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </>
+  );
+};
+
+const HowWorksSection = () => {
+  return (
+    <>
       <div className="container">
         <div className="row">
           <div className="sec-t">
@@ -701,6 +626,33 @@ export function IndexPage() {
           </div>
         </div>
       </div>
+    </>
+  );
+};
+
+export function IndexPage() {
+  return (
+    <Layout>
+      <Head>
+        <title>Art Nft Web</title>
+      </Head>
+
+      <HeroImage />
+
+      {/* Auctions Section*/}
+      <LiveAuctionSection />
+
+      {/* Seller Section*/}
+      <SellerSection />
+
+      {/* Popular Collection Section*/}
+      <CollectionSection />
+
+      {/* Explorer Section*/}
+      <ExploreSection />
+
+      {/* How It Works Section*/}
+      <HowWorksSection />
     </Layout>
   );
 }
