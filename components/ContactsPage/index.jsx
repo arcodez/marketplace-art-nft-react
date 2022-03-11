@@ -91,6 +91,7 @@ export const ContactsPage = () => {
           </form>
         </div>
       </div>
+      {/* Estilos */}
       <style jsx>{`
         /*! CSS Used from: https://edeline.ru/nft-demo/css/style.css ; media=all */
         @media all {
